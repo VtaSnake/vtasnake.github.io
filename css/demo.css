@@ -23,6 +23,15 @@ body {
 	font-family: 'Raleway', Calibri, Arial, sans-serif;
 }
 
+#popis {
+	overflow:hidden;
+	float:right;
+	color: #fff;
+	font-weight: 400;
+	font-size: 2em;
+	line-height: 1.25;
+	font-family: 'Raleway', Calibri, Arial, sans-serif;
+}
 a, button {
 	outline: none;
 }

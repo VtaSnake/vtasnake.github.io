@@ -9,7 +9,7 @@
 	z-index: 1;
 }
 .demo-1 .large-header {
-	background-image: url('../img/demo-1-bg.jpg');
+	background-image: url('../img/background.jpg');
 }
 video#bgvid { 
   position: fixed; right: 0; bottom: 0; 
@@ -26,12 +26,24 @@ video#bgvid {
 	padding: 0;
 	color: #f9f1e9;
 	text-align: center;
-	top: 50%;
+	top: 46%;
 	left: 50%;
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
 }
 
+.popis {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 53%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	width: 500px;
+}
 .demo-1 .main-title, 
 .demo-3 .main-title {
 	text-transform: uppercase;
