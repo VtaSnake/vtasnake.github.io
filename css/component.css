@@ -32,7 +32,7 @@ video#bgvid {
 	transform: translate3d(-50%,-50%,0);
 }
 
-.popis {
+.description {
 	position: absolute;
 	margin: 0;
 	padding: 0;
