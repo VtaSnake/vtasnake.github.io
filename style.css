@@ -90,13 +90,13 @@ ul {
 	display: flex;
 	text-align: center;
 	position: absolute;
-	top: 45%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 ul li {
 	background: #fff;
-	margin: 10px;
+	margin: 8px;
 	list-style: none;
 	font-size: 30px;
 	transition: 0.2s;
