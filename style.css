@@ -96,7 +96,8 @@ span.flickering-3 {
 	transform: translate(-50%, -50%)
 }
 .container > a {
-	margin: 0px 5px;
+	float: left;
+	margin: 5px 5px;
 	width: 80px;
 	height: 80px;
 	background: #eee;
