@@ -2,7 +2,7 @@ html,
 body {
 	background-image: url(img/wall.jpg);
 	background-size: auto;
-	background-position: center 10%;
+	background-position: center 0;
 	background-repeat: no-repeat;
 	position: relative;
 	top: 0;
@@ -14,7 +14,7 @@ body {
 	src: url('font/Beon.otf') format('opentype');
 }
 body {
-	padding-top: 270px;
+	padding-top: 300px;
 }
 h1.neon {
 	color: #fff;
@@ -96,7 +96,7 @@ ul {
 }
 ul li {
 	background: #fff;
-	margin: 8px;
+	margin: 5px;
 	list-style: none;
 	font-size: 30px;
 	transition: 0.2s;
