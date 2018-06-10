@@ -1,13 +1,96 @@
 html,
 body {
-  height: 100%;
-	margin: 0px 10px;
+	background-image: url(img/wall.jpg);
+	background-size: auto;
+	background-position: center 10%;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	z-index: -10;
+}
+@font-face {
+	font-family: 'Beon Medium';
+	src: url('font/Beon.otf') format('opentype');
+}
+body {
+	padding-top: 270px;
+}
+h1.neon {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 200;
+	text-align: center;
+}
+h1.neon.first {
+	font-size: 100px;
+	font-family: 'Beon Medium';
+	text-shadow: 0px 0px 10px #159760,
+			0px 0px 20px #159760,
+			0px 0px 30px #159760,
+			0px 0px 40px #159760,
+			0px 0px 50px #159760,
+			0px 0px 60px #159760;
+}
+h1.neon.second {
+	font-size: 30px;
+	font-family: 'Beon Medium';
+	text-shadow: 0px 0px 10px #d31f82,
+			0px 0px 20px #d31f82,
+			0px 0px 30px #d31f82,
+			0px 0px 40px #d31f82,
+			0px 0px 50px #d31f82,
+			0px 0px 60px #d31f82;
+}
+
+/* FLICKERING */
+span.flickering-1 {
+	animation: flickering-1 6s infinite;
+}
+span.flickering-2 {
+	animation: flickering-2 3s infinite;
+}
+span.flickering-3 {
+	animation: flickering-3 5s infinite;
+}
+
+/* ANIMATIONS */
+@keyframes flickering-1 {
+	0% { opacity: 1; }
+	52% { opacity: 1; }
+	55% { opacity: 0; }
+	56% { opacity: 1; }
+	100% { opacity: 1; }
+}
+
+@keyframes flickering-2 {
+	0% { opacity: 1; }
+	62% { opacity: 1; }
+	65% { opacity: 0; }
+	66% { opacity: 1; }
+	69% { opacity: 0; }
+	70% { opacity: 1; }
+	73% { opacity: 0; }
+	74% { opacity: 1; }
+	100% { opacity: 1; }
+}
+
+@keyframes flickering-3 {
+	0% { opacity: 1; }
+	82% { opacity: 1; }
+	84% { opacity: 0; }
+	85% { opacity: 1; }
+	87% { opacity: 0; }
+	88% { opacity: 1; }
+	90% { opacity: 0; }
+	91% { opacity: 1; }
+	100% { opacity: 1; }
 }
 .youtube {
 	position: absolute;
-	top: 10%;
+	top: 15%;
 	left: 10%;
-  z-index:1;
+	z-index:1;
 	opacity:0.5;
 	font-size: 50px;
 	transform: translate(-50%, -50%)
@@ -35,9 +118,9 @@ a.fa-youtube:link {
 }
 .instagram {
   position: absolute;
-	top: 10%;
+	top: 15%;
 	right: 5%;
-  z-index:1;
+	z-index:1;
 	opacity:0.5;
 	font-size: 50px;
 	transform: translate(-50%, -50%)
@@ -61,13 +144,13 @@ a.fa-instagram:hover {
 	background: #fff;
 }
 a.fa-instagram:link {
-text-decoration: none;
+	text-decoration: none;
 }
 .twitch {
-  position: absolute;
-	bottom: 5%;
+	position: absolute;
+	bottom: -55%;
 	left: 10%;
-  z-index:1;
+	z-index:1;
 	opacity:0.5;
 	font-size: 50px;
 	transform: translate(-50%, -50%)
@@ -94,10 +177,10 @@ a.fa-twitch:link {
 	text-decoration: none;
 }
 .twitter {
-  position: absolute;
-	bottom: 5%;
+	position: absolute;
+	bottom: -55%;
 	right: 5%;
-  z-index:1;
+	z-index:1;
 	opacity:0.5;
 	font-size: 50px;
 	transform: translate(-50%, -50%)
@@ -122,22 +205,4 @@ a.fa-twitter:hover {
 }
 a.fa-twitter:link {
 	text-decoration: none;
-}
-.video {
-  position: fixed;
-  top: 50%; left: 50%;
-  z-index: 1;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-}
-
-
-header {
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
 }
