@@ -1,4 +1,3 @@
-html,
 body {
 	background-image: url(img/wall.jpg);
 	background-size: auto;
@@ -86,40 +85,63 @@ span.flickering-3 {
 	91% { opacity: 1; }
 	100% { opacity: 1; }
 }
-ul {
-	display: flex;
-	text-align: center;
+.container {
 	position: absolute;
-	top: 120px;
+	top: 30%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	z-index: 1;
+	opacity: 0.5;
+	font-size: 50px;
+	transform: translate(-50%, -50%)
 }
-ul li {
-	background: #fff;
-	margin: 5px;
-	list-style: none;
-	font-size: 30px;
-	transition: 0.2s;
-}
-ul li a {
-	width: 70px;
-	padding: 16px 0;
-	display: block;
+.container > a {
+	margin: 0px 5px;
+	width: 80px;
+	height: 80px;
+	background: #eee;
+	text-align: center;
+	line-height: 80px;
+	border-radius: 50%;
 	color: #fff;
+	transition: 200ms;
 }
-ul li:nth-child(1) {
-	background: #cd201f;
+a.fa-youtube {
+	background: #ff0000;
 }
-ul li:nth-child(2) {
+a.fa-instagram {
 	background: #c32aa3;
 }
-ul li:nth-child(3) {
+a.fa-twitch {
 	background: #6441a4;
 }
-ul li:nth-child(4) {
-	background: #55acee;
+a.fa-twitter {
+	background: #1da1f2;
 }
-ul li:hover {
-	transform: translateY(-8px);
-	box-shadow: 0 10px 10px black;
+a.fa-youtube:hover {
+	color: #ff0000;
+	background: #fff;
+}
+a.fa-instagram:hover {
+	color: #c32aa3;
+	background: #fff;
+}
+a.fa-twitch:hover {
+	color: #6441a4;
+	background: #fff;
+}
+a.fa-twitter:hover {
+	color: #1da1f2;
+	background: #fff;
+}
+a.fa-youtube:link {
+	text-decoration: none;
+}
+a.fa-instagram:link {
+	text-decoration: none;
+}
+a.fa-twitch:link {
+	text-decoration: none;
+}
+a.fa-twitter:link {
+	text-decoration: none;
 }
