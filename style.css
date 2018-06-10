@@ -3,22 +3,19 @@ body {
 	background-image: url(img/wall.jpg);
 	background-size: auto;
 	background-position: center 0;
-	background-repeat: no-repeat;
 	position: relative;
 	top: 0;
 	bottom: 0;
-	z-index: -10;
 }
 @font-face {
 	font-family: 'Beon Medium';
 	src: url('font/Beon.otf') format('opentype');
 }
 body {
-	padding-top: 150px;
+	padding-top: 300px;
 }
 h1.neon {
 	color: #fff;
-	text-transform: uppercase;
 	font-weight: 200;
 	text-align: center;
 }
@@ -88,7 +85,7 @@ span.flickering-3 {
 }
 .container {
 	position: absolute;
-	bottom: -75%;
+	top: 30%;
 	left: 50%;
 	z-index: 1;
 	opacity: 0.5;
