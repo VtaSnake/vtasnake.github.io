@@ -1,3 +1,4 @@
+html,
 body {
 	background-image: url(img/wall.jpg);
 	background-size: auto;
@@ -13,7 +14,7 @@ body {
 	src: url('font/Beon.otf') format('opentype');
 }
 body {
-	padding-top: 300px;
+	padding-top: 150px;
 }
 h1.neon {
 	color: #fff;
@@ -87,7 +88,7 @@ span.flickering-3 {
 }
 .container {
 	position: absolute;
-	top: 30%;
+	bottom: -60%;
 	left: 50%;
 	z-index: 1;
 	opacity: 0.5;
