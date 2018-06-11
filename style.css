@@ -16,6 +16,12 @@ body {
 body {
 	padding-top: 300px;
 }
+@media (max-width:750px)
+{
+	body {
+		padding-top: 200px
+	}
+}
 h1.neon {
 	color: #fff;
 	font-weight: 200;
@@ -87,7 +93,7 @@ span.flickering-3 {
 }
 .container {
 	position: absolute;
-	top: 20%;
+	top: 28%;
 	left: 50%;
 	z-index: 1;
 	opacity: 0.5;
@@ -106,6 +112,32 @@ span.flickering-3 {
 	color: #fff;
 	transition: 200ms;
 }
+@media (max-width:750px)
+{
+	.container {
+		position: absolute;
+		top: 20%;
+		left: 50%;
+		z-index: 1;
+		opacity: 0.5;
+		font-size: 40px;
+		transform: translate(-50%, -50%)
+	}
+}
+@media (max-width:750px)
+{
+	.container > a {
+		float: left;
+		margin: 5px 5px;
+		width: 68px;
+		height: 68px;
+		background: #eee;
+		text-align: center;
+		line-height: 68px;
+		border-radius: 25%;
+	}
+}
+
 a.fa-youtube {
 	background: #ff0000;
 }
