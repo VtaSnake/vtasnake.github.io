@@ -129,12 +129,11 @@ span.flickering-3 {
 	.container > a {
 		float: left;
 		margin: 5px 5px;
-		width: 68px;
-		height: 68px;
+		width: 67px;
+		height: 67px;
 		background: #eee;
 		text-align: center;
-		line-height: 68px;
-		border-radius: 25%;
+		line-height: 67px;
 	}
 }
 
