@@ -16,7 +16,7 @@ body {
 body {
 	padding-top: 135px;
 }
-@media (max-width:650px)
+@media (max-width:665px)
 {
 	body {
 		padding-top: 150px
@@ -112,7 +112,7 @@ span.flickering-3 {
 	color: #fff;
 	transition: 200ms;
 }
-@media (max-width:650px)
+@media (max-width:665px)
 {
 	.container {
 		position: absolute;
@@ -124,7 +124,7 @@ span.flickering-3 {
 		transform: translate(-50%, -50%);
 	}
 }
-@media (max-width:650px)
+@media (max-width:665px)
 {
 	.container > a {
 		float: left;
@@ -189,7 +189,6 @@ div.video {
 	top: 166%;
 	left: 50%;
 	z-index: 1;
-	font-size: 50px;
 	transform: translate(-50%, -50%);
 }
 div.video > iframe {
@@ -201,11 +200,11 @@ div.video > iframe {
 	margin: auto;
 	border-radius: 5px;
 }
-@media (max-width:650px)
+@media (max-width:665px)
 {
 	div.video {
-		width: 271px;
-		height: 159px;
+		width: 287px;
+		height: 168px;
 		background-color: #282828;
 		border-radius: 10px;
 		text-align: center;
@@ -213,15 +212,14 @@ div.video > iframe {
 		top: 125%;
 		left: 50%;
 		z-index: 1;
-		font-size: 50px;
 		transform: translate(-50%, -50%);
 	}
 }
-@media (max-width:650px)
+@media (max-width:665px)
 {
 	div.video > iframe {
-		width: 256px;
-		height: 144px;
+		width: 272px;
+		height: 153px;
 		position: absolute;
     	top: 0; right: 0;
 		bottom: 0; left: 0;
