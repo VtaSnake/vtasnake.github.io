@@ -1,26 +1,32 @@
-html,
-body {
-	background-image: url(img/wall.jpg);
-	background-size: auto;
-	background-position: center 0;
-	position: relative;
-	top: 0;
-	bottom: 0;
-	margin: 0;
-	padding: 0;
+* {
+  padding: 0;
+  margin: 0;
+  font-family:'Roboto';
 }
 @font-face {
 	font-family: 'Beon Medium';
 	src: url('font/Beon.otf') format('opentype');
 }
-body {
-	padding-top: 135px;
+#fullpage {
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  font-size: 5em;
+  color: #fff;
 }
-@media (max-width:665px)
-{
-	body {
-		padding-top: 150px
-	}
+#fullpage section {
+	height: 100vh;
+}
+#fullpage section:nth-child(1) {
+	width: 100vw;
+	background-image: url(img/wall.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: table;
+	position: relative;
+	overflow: hidden;
 }
 h1.neon {
 	color: #fff;
@@ -30,6 +36,11 @@ h1.neon {
 h1.neon.first {
 	font-size: 100px;
 	font-family: 'Beon Medium';
+	position: absolute;
+	float: left;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	text-shadow: 0px 0px 10px #159760,
 			0px 0px 20px #159760,
 			0px 0px 30px #159760,
@@ -40,6 +51,11 @@ h1.neon.first {
 h1.neon.second {
 	font-size: 30px;
 	font-family: 'Beon Medium';
+	position: absolute;
+	float: left;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	text-shadow: 0px 0px 10px #d31f82,
 			0px 0px 20px #d31f82,
 			0px 0px 30px #d31f82,
@@ -50,13 +66,24 @@ h1.neon.second {
 
 /* FLICKERING */
 span.flickering-1 {
+	font-family: 'Beon Medium';
 	animation: flickering-1 6s infinite;
 }
 span.flickering-2 {
+	font-family: 'Beon Medium';
 	animation: flickering-2 3s infinite;
 }
 span.flickering-3 {
+	font-family: 'Beon Medium';
 	animation: flickering-3 5s infinite;
+}
+span.flickering-4 {
+	font-family: 'Beon Medium';
+	animation: flickering-3 4.5s infinite;
+}
+span.flickering-5 {
+	font-family: 'Beon Medium';
+	animation: flickering-3 5.5s infinite;
 }
 
 /* ANIMATIONS */
@@ -67,7 +94,6 @@ span.flickering-3 {
 	56% { opacity: 1; }
 	100% { opacity: 1; }
 }
-
 @keyframes flickering-2 {
 	0% { opacity: 1; }
 	62% { opacity: 1; }
@@ -79,7 +105,6 @@ span.flickering-3 {
 	74% { opacity: 1; }
 	100% { opacity: 1; }
 }
-
 @keyframes flickering-3 {
 	0% { opacity: 1; }
 	82% { opacity: 1; }
@@ -91,14 +116,44 @@ span.flickering-3 {
 	91% { opacity: 1; }
 	100% { opacity: 1; }
 }
+@keyframes flickering-4 {
+	0% { opacity: 1; }
+	82% { opacity: 1; }
+	85% { opacity: 1; }
+	87% { opacity: 0; }
+	90% { opacity: 0; }
+	91% { opacity: 1; }
+	100% { opacity: 1; }
+}
+@keyframes flickering-5 {
+	0% { opacity: 1; }
+	62% { opacity: 1; }
+	65% { opacity: 0; }
+	66% { opacity: 1; }
+	69% { opacity: 0; }
+	70% { opacity: 1; }
+	100% { opacity: 1; }
+}
 .container {
 	position: absolute;
-	top: 20%;
+	top: 15%;
 	left: 50%;
 	z-index: 1;
 	opacity: 0.6;
 	font-size: 50px;
 	transform: translate(-50%, -50%);
+}
+@media (max-width:665px)
+{
+	.container {
+		position: absolute;
+		top: 15%;
+		left: 50%;
+		z-index: 1;
+		opacity: 0.6;
+		font-size: 40px;
+		transform: translate(-50%, -50%);
+	}
 }
 .container > a {
 	float: left;
@@ -111,18 +166,6 @@ span.flickering-3 {
 	border-radius: 25%;
 	color: #fff;
 	transition: 200ms;
-}
-@media (max-width:665px)
-{
-	.container {
-		position: absolute;
-		top: 20%;
-		left: 50%;
-		z-index: 1;
-		opacity: 0.6;
-		font-size: 40px;
-		transform: translate(-50%, -50%);
-	}
 }
 @media (max-width:665px)
 {
@@ -179,51 +222,26 @@ a.fa-twitch:link {
 a.fa-twitter:link {
 	text-decoration: none;
 }
-div.video {
-	width: 655px;
-	height: 375px;
-	background-color: #282828;
-	border-radius: 10px;
-	text-align: center;
+.angle-down {
 	position: absolute;
-	top: 166%;
+	bottom: -5%;
 	left: 50%;
 	z-index: 1;
+	font-size: 100px;
 	transform: translate(-50%, -50%);
 }
-div.video > iframe {
-	width: 640px;
-	height: 360px;
-	position: absolute;
-    top: 0; right: 0;
-	bottom: 0; left: 0;
-	margin: auto;
-	border-radius: 5px;
+.angle-down > a {
+	float: left;
+	text-align: center;
+	color: #a6b1b7;
+	transition: 200ms;
 }
-@media (max-width:665px)
-{
-	div.video {
-		width: 287px;
-		height: 168px;
-		background-color: #282828;
-		border-radius: 10px;
-		text-align: center;
-		position: absolute;
-		top: 125%;
-		left: 50%;
-		z-index: 1;
-		transform: translate(-50%, -50%);
-	}
+a.fa-angle-down:hover {
+	color: #fff;
 }
-@media (max-width:665px)
-{
-	div.video > iframe {
-		width: 272px;
-		height: 153px;
-		position: absolute;
-    	top: 0; right: 0;
-		bottom: 0; left: 0;
-		margin: auto;
-		border-radius: 5px;
-	}
+a.fa-angle-down:link {
+	text-decoration: none;
+}
+#fullpage section:nth-child(2) {
+	background-color: #282828;
 }

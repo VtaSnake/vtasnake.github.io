@@ -1,40 +1,66 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="cs-CZ">
-    <head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
-        <meta name="robots" content="index,follow" />
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="index,follow" />
 
-        <title>Vta Snake</title>
-        <meta name="description" content="Vta Snake | Official website" />
-        <meta name="keywords" itemprop="keywords" content="vta snake, youtube, instagram, twitch, twitter" />
-        <meta property="og:title" content="Vta Snake" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://vtasnake.github.io" />
-        <meta property="og:site_name" content="Vta Snake" />
-        <meta property="og:description" content="Vta Snake | Official website" />
+    <title>Vta Snake | Official website</title>
+    <meta name="description" content="Official website" />
+    <meta name="keywords" itemprop="keywords" content="vta snake, youtube, instagram, twitch, twitter" />
+    <meta property="og:title" content="Vta Snake" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vtasnake.github.io" />
+    <meta property="og:image" content="img/icon.jpg">
+    <meta property="og:site_name" content="Vta Snake" />
+    <meta property="og:description" content="Official website" />
 
-        <link rel="shortcut icon" type="ico" href="img/icon.png">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    </head>
-    <body>
-        <h1 class="neon first"><span class="flickering-3">V</span>t<span class="flickering-1">a</span> Sna<span class="flickering-2">k</span>e
-        <h1 class="neon second">Oficial website</h1>
-        
-        <div class="container">
-            <a href="https://www.youtube.com/VTAsro" class="fab fa-youtube"></a>
-            <a href="https://www.instagram.com/vtasnake" class="fab fa-instagram"></a>
-            <a href="https://www.twitch.tv/vtasnake" class="fab fa-twitch"></a>
-            <a href="https://twitter.com/vtasnake" class="fab fa-twitter"></a>
-        </div>
+    <link rel="shortcut icon" type="ico" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
 
-        <div class="video">
-            <iframe src="https://www.youtube.com/embed/7PnvQNLIruI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
+	<div id="fullpage">
+		<section>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script type="text/javascript"></script>
-    </body>
+			<h1 class="neon first"><span class="flickering-3">V</span>t<span class="flickering-1">a</span> Sna<span class="flickering-2">k</span>e</h1>
+			<h1 class="neon second">O<span class="flickering-4">f</span>icial <span class="flickering-5">w</span>ebsite</h1>
+
+			<div class="container">
+				<a href="https://www.youtube.com/VTAsro" rel="nofollow" target="_blank" class="fab fa-youtube"></a>
+				<a href="https://www.instagram.com/vtasnake" rel="nofollow" target="_blank" class="fab fa-instagram"></a>
+				<a href="https://www.twitch.tv/vtasnake" rel="nofollow" target="_blank" class="fab fa-twitch"></a>
+				<a href="https://twitter.com/vtasnake" rel="nofollow" target="_blank" class="fab fa-twitter"></a>
+			</div>
+
+			<div class="angle-down">
+				<a href="#" class="fas fa-angle-down"></a>
+			</div>
+
+		</section>
+		<section>2</section>
+	</div>
+
+<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js'></script> 
+<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script> 
+<script type="text/javascript" src='./js/jquery.fullpage.min.js'></script> 
+<script type="text/javascript">
+	FastClick.attach(document.body);
+	$('#fullpage').fullpage();
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
 </html>
