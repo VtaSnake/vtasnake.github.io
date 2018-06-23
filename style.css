@@ -34,6 +34,7 @@ h1.neon {
 	text-align: center;
 }
 h1.neon.first {
+	white-space: nowrap;
 	font-size: 100px;
 	font-family: 'Beon Medium';
 	position: absolute;
@@ -52,7 +53,7 @@ h1.neon.first {
 {
 	h1.neon.first {
 		white-space: nowrap;
-		font-size: 100px;
+		font-size: 60px;
 		font-family: 'Beon Medium';
 		position: absolute;
 		float: left;
@@ -62,6 +63,7 @@ h1.neon.first {
 	}
 }
 h1.neon.second {
+	white-space: nowrap;
 	font-size: 30px;
 	font-family: 'Beon Medium';
 	position: absolute;
@@ -79,11 +81,12 @@ h1.neon.second {
 @media (max-width:665px)
 {
 	h1.neon.second {
+		white-space: nowrap;
 		font-size: 30px;
 		font-family: 'Beon Medium';
 		position: absolute;
 		float: left;
-		top: 70%;
+		top: 60%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
