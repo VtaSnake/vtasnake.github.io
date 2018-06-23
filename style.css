@@ -48,6 +48,18 @@ h1.neon.first {
 			0px 0px 50px #159760,
 			0px 0px 60px #159760;
 }
+@media (max-width:665px)
+{
+	h1.neon.first {
+		font-size: 75px;
+		font-family: 'Beon Medium';
+		position: absolute;
+		float: left;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
 h1.neon.second {
 	font-size: 30px;
 	font-family: 'Beon Medium';
@@ -62,6 +74,18 @@ h1.neon.second {
 			0px 0px 40px #d31f82,
 			0px 0px 50px #d31f82,
 			0px 0px 60px #d31f82;
+}
+@media (max-width:665px)
+{
+	h1.neon.second {
+		font-size: 25px;
+		font-family: 'Beon Medium';
+		position: absolute;
+		float: left;
+		top: 70%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 }
 
 /* FLICKERING */
@@ -139,7 +163,7 @@ span.flickering-5 {
 	top: 15%;
 	left: 50%;
 	z-index: 1;
-	opacity: 0.6;
+	opacity: 0.75;
 	font-size: 50px;
 	transform: translate(-50%, -50%);
 }
@@ -150,7 +174,7 @@ span.flickering-5 {
 		top: 15%;
 		left: 50%;
 		z-index: 1;
-		opacity: 0.6;
+		opacity: 0.75;
 		font-size: 40px;
 		transform: translate(-50%, -50%);
 	}
@@ -172,11 +196,11 @@ span.flickering-5 {
 	.container > a {
 		float: left;
 		margin: 5px 5px;
-		width: 67px;
-		height: 67px;
+		width: 65px;
+		height: 65px;
 		background: #eee;
 		text-align: center;
-		line-height: 67px;
+		line-height: 65px;
 		border-radius: 25%;
 		color: #fff;
 		transition: 200ms;
@@ -230,17 +254,21 @@ a.fa-twitter:link {
 	font-size: 100px;
 	transform: translate(-50%, -50%);
 }
-.angle-down > a {
+@media (max-width:665px)
+{
+	.angle-down {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		z-index: 1;
+		font-size: 100px;
+		transform: translate(-50%, -50%);
+	}
+}
+.angle-down > i {
 	float: left;
 	text-align: center;
 	color: #a6b1b7;
-	transition: 200ms;
-}
-a.fa-angle-down:hover {
-	color: #fff;
-}
-a.fa-angle-down:link {
-	text-decoration: none;
 }
 #fullpage section:nth-child(2) {
 	background-color: #282828;
