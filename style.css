@@ -1,18 +1,18 @@
 * {
-  padding: 0;
-  margin: 0;
-  font-family:'Roboto';
+	padding: 0;
+	margin: 0;
+	font-family:'Roboto';
 }
 @font-face {
 	font-family: 'Beon Medium';
 	src: url('font/Beon.otf') format('opentype');
 }
 #fullpage {
-  height: 100vh;
-  overflow: hidden;
-  text-align: center;
-  font-size: 5em;
-  color: #fff;
+	height: 100vh;
+	overflow: hidden;
+	text-align: center;
+	font-size: 5em;
+	color: #fff;
 }
 #fullpage section {
 	height: 100vh;
