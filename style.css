@@ -51,7 +51,7 @@ h1.neon.first {
 @media (max-width:665px)
 {
 	h1.neon.first {
-		font-size: 75px;
+		font-size: 100px;
 		font-family: 'Beon Medium';
 		position: absolute;
 		float: left;
@@ -78,7 +78,7 @@ h1.neon.second {
 @media (max-width:665px)
 {
 	h1.neon.second {
-		font-size: 25px;
+		font-size: 30px;
 		font-family: 'Beon Medium';
 		position: absolute;
 		float: left;
