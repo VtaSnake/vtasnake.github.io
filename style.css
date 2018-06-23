@@ -51,6 +51,7 @@ h1.neon.first {
 @media (max-width:665px)
 {
 	h1.neon.first {
+		white-space: nowrap;
 		font-size: 100px;
 		font-family: 'Beon Medium';
 		position: absolute;
