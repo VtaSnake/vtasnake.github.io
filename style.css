@@ -82,7 +82,7 @@ h1.neon.second {
 {
 	h1.neon.second {
 		white-space: nowrap;
-		font-size: 30px;
+		font-size: 25px;
 		font-family: 'Beon Medium';
 		position: absolute;
 		float: left;
@@ -262,7 +262,7 @@ a.fa-twitter:link {
 {
 	.angle-down {
 		position: absolute;
-		bottom: 0;
+		bottom: 2%;
 		left: 50%;
 		z-index: 1;
 		font-size: 100px;
