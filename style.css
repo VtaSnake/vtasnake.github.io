@@ -1,7 +1,7 @@
 * {
 	padding: 0;
 	margin: 0;
-	font-family:'Roboto';
+	font-family: Arial, sans-serif;
 }
 @font-face {
 	font-family: 'Beon Medium';
@@ -32,8 +32,11 @@ h1.neon {
 	color: #fff;
 	font-weight: 200;
 	text-align: center;
+	text-transform: uppercase;
+	opacity: 1;
 }
 h1.neon.first {
+	animation: text 1s;
 	white-space: nowrap;
 	font-size: 100px;
 	font-family: 'Beon Medium';
@@ -49,20 +52,15 @@ h1.neon.first {
 			0px 0px 50px #159760,
 			0px 0px 60px #159760;
 }
-@media (max-width:665px)
+@media (max-width:768px)
 {
 	h1.neon.first {
-		white-space: nowrap;
 		font-size: 60px;
-		font-family: 'Beon Medium';
-		position: absolute;
-		float: left;
 		top: 45%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 	}
 }
 h1.neon.second {
+	animation: text 3s;
 	white-space: nowrap;
 	font-size: 30px;
 	font-family: 'Beon Medium';
@@ -78,20 +76,21 @@ h1.neon.second {
 			0px 0px 50px #d31f82,
 			0px 0px 60px #d31f82;
 }
-@media (max-width:665px)
+@media (max-width:768px)
 {
 	h1.neon.second {
-		white-space: nowrap;
 		font-size: 25px;
-		font-family: 'Beon Medium';
-		position: absolute;
-		float: left;
 		top: 60%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 	}
 }
-
+@keyframes text {
+	0%{
+	opacity: 0;
+	}
+	100%{
+	opacity: 1;
+	}
+}
 /* FLICKERING */
 span.flickering-1 {
 	font-family: 'Beon Medium';
@@ -113,7 +112,6 @@ span.flickering-5 {
 	font-family: 'Beon Medium';
 	animation: flickering-3 5.5s infinite;
 }
-
 /* ANIMATIONS */
 @keyframes flickering-1 {
 	0% { opacity: 1; }
@@ -163,6 +161,7 @@ span.flickering-5 {
 	100% { opacity: 1; }
 }
 .container {
+	animation: social 2s;
 	position: absolute;
 	top: 15%;
 	left: 50%;
@@ -171,16 +170,19 @@ span.flickering-5 {
 	font-size: 50px;
 	transform: translate(-50%, -50%);
 }
-@media (max-width:665px)
+@media (max-width:768px)
 {
 	.container {
-		position: absolute;
 		top: 15%;
-		left: 50%;
-		z-index: 1;
-		opacity: 0.75;
 		font-size: 40px;
-		transform: translate(-50%, -50%);
+	}
+}
+@keyframes social {
+	0%{
+	opacity: 0;
+	}
+	100%{
+	opacity: 0.75;
 	}
 }
 .container > a {
@@ -195,19 +197,13 @@ span.flickering-5 {
 	color: #fff;
 	transition: 200ms;
 }
-@media (max-width:665px)
+@media (max-width:768px)
 {
 	.container > a {
-		float: left;
 		margin: 5px 5px;
 		width: 65px;
 		height: 65px;
-		background: #eee;
-		text-align: center;
 		line-height: 65px;
-		border-radius: 25%;
-		color: #fff;
-		transition: 200ms;
 	}
 }
 a.fa-youtube {
@@ -251,22 +247,19 @@ a.fa-twitter:link {
 	text-decoration: none;
 }
 .angle-down {
+	animation: angle-down 2s infinite;
 	position: absolute;
 	bottom: -5%;
 	left: 50%;
 	z-index: 1;
+	opacity: 1;
 	font-size: 100px;
 	transform: translate(-50%, -50%);
 }
-@media (max-width:665px)
+@media (max-width:768px)
 {
 	.angle-down {
-		position: absolute;
 		bottom: 2%;
-		left: 50%;
-		z-index: 1;
-		font-size: 100px;
-		transform: translate(-50%, -50%);
 	}
 }
 .angle-down > i {
@@ -274,6 +267,98 @@ a.fa-twitter:link {
 	text-align: center;
 	color: #a6b1b7;
 }
+@keyframes angle-down {
+	0%{
+	bottom: 0;
+	opacity: 0;
+	}
+	100%{
+	bottom: -5%;
+	opacity: 1;
+	}
+}
 #fullpage section:nth-child(2) {
 	background-color: #282828;
+}
+.info {
+	float: left;
+	text-align: center;
+	color: #a6b1b7;
+	position: relative;
+	top: 15%;
+	left: 50%;
+	font-size: 18px;
+	line-height: 25px;
+	transform: translate(-50%, -50%);
+}
+@media (max-width:768px)
+{
+	.info {
+		top: 20%;
+	}
+}
+div.video {
+	width: 660px;
+	height: 380px;
+	background-color: #a6b1b7;
+	border-radius: 8px;
+	text-align: center;
+	position: relative;
+	top: 60%;
+	left: 50%;
+	z-index: 1;
+	transform: translate(-50%, -50%);
+}
+@media (max-width:768px)
+{
+	div.video {
+		width: 287px;
+		height: 168px;
+		top: 70%;
+	}
+}
+div.video > iframe {
+	width: 640px;
+	height: 360px;
+	position: absolute;
+    top: 0; right: 0;
+	bottom: 0; left: 0;
+	margin: auto;
+	border-radius: 5px;
+}
+@media (max-width:768px)
+{
+	div.video > iframe {
+		width: 272px;
+		height: 153px;
+	}
+}
+.footer {
+	height: 80px;
+	position: relative;
+	top: 15%;
+    background-color: #a6b1b7;
+	text-align: center;
+	margin: 0 auto;
+}
+@media (max-width:768px)
+{
+	.footer {
+		opacity: 0;
+	}
+}
+.footer > p {
+	color: #282828;
+	position: absolute;
+	bottom: 25%;
+	left: 8%;
+	z-index: 1;
+	font-size: 18px;
+	transform: translate(-50%, -50%);
+}
+@media (max-width:768px)
+{
+	.footer > p {
+		opacity: 0;
+	}
 }
