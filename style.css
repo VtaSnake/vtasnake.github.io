@@ -259,7 +259,8 @@ a.fa-twitter:link {
 @media (max-width:768px)
 {
 	.angle-down {
-		bottom: 2%;
+		animation: angle-down-2 2s infinite;
+		bottom: 0;
 	}
 }
 .angle-down > i {
@@ -277,6 +278,17 @@ a.fa-twitter:link {
 	opacity: 1;
 	}
 }
+@keyframes angle-down-2 {
+	0%{
+	bottom: 5%;
+	opacity: 0;
+	}
+	100%{
+	bottom: 0;
+	opacity: 1;
+	}
+}
+
 #fullpage section:nth-child(2) {
 	background-color: #282828;
 }
@@ -294,7 +306,7 @@ a.fa-twitter:link {
 @media (max-width:768px)
 {
 	.info {
-		top: 20%;
+		top: 30%;
 	}
 }
 div.video {
@@ -312,8 +324,8 @@ div.video {
 @media (max-width:768px)
 {
 	div.video {
-		width: 287px;
-		height: 168px;
+		width: 303px;
+		height: 177px;
 		top: 70%;
 	}
 }
@@ -329,8 +341,8 @@ div.video > iframe {
 @media (max-width:768px)
 {
 	div.video > iframe {
-		width: 272px;
-		height: 153px;
+		width: 288px;
+		height: 162px;
 	}
 }
 .footer {
