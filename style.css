@@ -257,7 +257,7 @@ a.fa-twitter:link {
 	font-size: 100px;
 	transform: translate(-50%, -50%);
 }
-@media (max-width:768px)
+@media (max-width:940px)
 {
 	.angle-down {
 		animation: angle-down-2 2s infinite;
@@ -369,7 +369,7 @@ div.video > iframe {
 	font-size: 18px;
 	transform: translate(-50%, -50%);
 }
-@media (max-width:768px)
+@media (max-width:940px)
 {
 	.footer > p {
 		opacity: 0;
