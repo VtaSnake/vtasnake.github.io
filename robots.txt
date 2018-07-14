@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /.git/
+
+Sitemap: https://vtasnake.github.io/sitemap.xml
