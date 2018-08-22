@@ -60,7 +60,7 @@ h1.neon.first {
 			0px 0px 50px #159760,
 			0px 0px 60px #159760;
 }
-@media (max-width:768px)
+@media (max-width:700px)
 {
 	h1.neon.first {
 		font-size: 60px;
@@ -84,7 +84,7 @@ h1.neon.second {
 			0px 0px 50px #d31f82,
 			0px 0px 60px #d31f82;
 }
-@media (max-width:768px)
+@media (max-width:700px)
 {
 	h1.neon.second {
 		font-size: 25px;
@@ -179,7 +179,7 @@ span.flickering-5 {
 	font-size: 50px;
 	transform: translate(-50%, -50%);
 }
-@media (max-width:768px)
+@media (max-width:700px)
 {
 	.container {
 		top: 20%;
@@ -206,7 +206,7 @@ span.flickering-5 {
 	color: #fff;
 	transition: 200ms;
 }
-@media (max-width:768px)
+@media (max-width:700px)
 {
 	.container > a {
 		margin: 5px 5px;
@@ -306,16 +306,23 @@ a.fa-twitter:link {
 	text-align: center;
 	color: #a6b1b7;
 	position: relative;
-	top: 15%;
+	top: 30%;
 	left: 50%;
 	font-size: 18px;
 	line-height: 25px;
 	transform: translate(-50%, -50%);
 }
-@media (max-width:768px)
+@media (min-width:768px)
 {
 	.info {
-		top: 30%;
+		top: 15%;
+	}
+}
+@media (max-width:460px)
+{
+	.info {
+		font-size: 16px;
+		line-height: 20px;
 	}
 }
 div.video {
@@ -362,7 +369,7 @@ div.video > iframe {
 	text-align: center;
 	margin: 0 auto;
 }
-@media (max-width:768px)
+@media (max-width:940px)
 {
 	.footer {
 		opacity: 0;
