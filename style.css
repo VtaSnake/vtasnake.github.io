@@ -47,7 +47,7 @@ h1.neon.first {
 	font-family: 'Beon Medium';
 	position: absolute;
 	float: left;
-	top: 40%;
+	top: 45%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-shadow: 0px 0px 10px #159760,
@@ -61,7 +61,6 @@ h1.neon.first {
 {
 	h1.neon.first {
 		font-size: 60px;
-		top: 45%;
 	}
 }
 h1.neon.second {
@@ -84,8 +83,7 @@ h1.neon.second {
 @media (max-width:700px)
 {
 	h1.neon.second {
-		font-size: 25px;
-		top: 60%;
+		font-size: 20px;
 	}
 }
 @keyframes text {
@@ -318,7 +316,7 @@ a.fa-twitter:link {
 @media (max-width:460px)
 {
 	.info {
-		font-size: 16px;
+		font-size: 15px;
 		line-height: 20px;
 	}
 }
