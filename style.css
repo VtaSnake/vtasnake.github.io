@@ -18,9 +18,6 @@
 #fullpage {
 	height: 100vh;
 	overflow: hidden;
-	text-align: center;
-	font-size: 5em;
-	color: #fff;
 }
 #fullpage section {
 	height: 100vh;
