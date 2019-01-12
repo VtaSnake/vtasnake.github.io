@@ -29,7 +29,6 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	display: table;
 	position: relative;
 	overflow: hidden;
 }
