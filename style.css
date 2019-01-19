@@ -249,6 +249,31 @@ a.fa-twitch:link {
 a.fa-twitter:link {
 	text-decoration: none;
 }
+.fullscreen {
+	position: absolute;
+	top: 4%;
+	right: 0;
+	z-index: 1;
+	font-size: 35px;
+	transform: translate(-50%, -50%);
+}
+.fa-expand {
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 80px;
+	color: #fff;
+	transition: 250ms;
+}
+@media (max-width:1279px)
+{
+	.fa-expand {
+		opacity: 0;
+	}
+}
+.fa-expand:hover {
+	color: #159760;
+}
 .angle-down {
 	animation: angle-down 2s infinite;
 	position: absolute;

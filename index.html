@@ -38,7 +38,11 @@
 				<a href="https://www.instagram.com/vtasnake" rel="nofollow" target="_blank" class="fab fa-instagram"></a>
 				<a href="https://www.twitch.tv/vtasnake" rel="nofollow" target="_blank" class="fab fa-twitch"></a>
 				<a href="https://twitter.com/vtasnake" rel="nofollow" target="_blank" class="fab fa-twitter"></a>
-			</div>
+      </div>
+
+      <div class="fullscreen">
+        <div class="fas fa-expand" onclick="viewPage();"></div>
+      </div>
 
 			<div class="angle-down">
 				<i class="fas fa-angle-down"></i>
@@ -67,6 +71,35 @@
 <script type="text/javascript">
 	FastClick.attach(document.body);
 	$('#fullpage').fullpage();
+</script>
+<script type="text/javascript">
+	function viewPage () {
+		var el = document.body;
+		toggleFullscreen(el);
+	};
+	function toggleFullscreen (el) {
+		if(document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement || document.msFullscreenElement){
+			if(document.exitFullscreen){
+				document.exitFullscreen();
+			}else if(document.mozCancelFullScreen){
+				document.mozCancelFullScreen();
+			}else if(document.webkitExitFullscreen){
+				document.webkitExitFullscreen();
+			}else if(document.msExitFullscreen){
+				document.msExitFullscreen();
+			}
+		}else{
+			if(document.documentElement.requestFullscreen){
+				el.requestFullscreen();
+			}else if(document.documentElement.mozRequestFullScreen){
+				el.mozRequestFullScreen();
+			}else if(document.documentElement.webkitRequestFullscreen){
+				el.webkitRequestFullscreen();
+			}else if(document.documentElement.msRequestFullscreen){
+				el.msRequestFullscreen();
+			}
+		}
+	};
 </script>
 <script type="application/ld+json">
   {
