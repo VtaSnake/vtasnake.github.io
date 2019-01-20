@@ -262,6 +262,7 @@ a.fa-twitter:link {
 	height: 35px;
 	text-align: center;
 	line-height: 80px;
+	opacity: 0.5;
 	color: #fff;
 	transition: 250ms;
 }
@@ -272,7 +273,7 @@ a.fa-twitter:link {
 	}
 }
 .fa-expand:hover {
-	color: #159760;
+	opacity: 1;
 }
 .angle-down {
 	animation: angle-down 2s infinite;
