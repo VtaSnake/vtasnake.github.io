@@ -56,7 +56,7 @@ h1.neon.first {
 			0px 0px 50px #159760,
 			0px 0px 60px #159760;
 }
-@media (max-width:700px)
+@media (max-width:720px)
 {
 	h1.neon.first {
 		font-size: 60px;
@@ -79,7 +79,7 @@ h1.neon.second {
 			0px 0px 50px #d31f82,
 			0px 0px 60px #d31f82;
 }
-@media (max-width:700px)
+@media (max-width:720px)
 {
 	h1.neon.second {
 		font-size: 20px;
@@ -173,7 +173,7 @@ span.flickering-5 {
 	font-size: 50px;
 	transform: translate(-50%, -50%);
 }
-@media (max-width:700px)
+@media (max-width:720px)
 {
 	.container {
 		top: 20%;
@@ -200,7 +200,7 @@ span.flickering-5 {
 	color: #fff;
 	transition: 250ms;
 }
-@media (max-width:700px)
+@media (max-width:720px)
 {
 	.container > a {
 		margin: 5px 5px;
@@ -249,33 +249,28 @@ a.fa-twitch:link {
 a.fa-twitter:link {
 	text-decoration: none;
 }
-.fullscreen {
+.fa-expand {
 	position: absolute;
 	top: 4%;
 	right: 0;
 	z-index: 1;
+	opacity: 0.5;
 	font-size: 35px;
+	color: #a6b1b7;
+	transition: 250ms;
 	transform: translate(-50%, -50%);
 }
-.fa-expand {
-	width: 35px;
-	height: 35px;
-	text-align: center;
-	line-height: 80px;
-	opacity: 0.5;
-	color: #fff;
-	transition: 250ms;
-}
-@media (max-width:1279px)
+@media (max-width:720px)
 {
 	.fa-expand {
+		right: -20%;
 		opacity: 0;
 	}
 }
 .fa-expand:hover {
 	opacity: 1;
 }
-.angle-down {
+.fa-angle-down {
 	animation: angle-down 2s infinite;
 	position: absolute;
 	bottom: -5%;
@@ -283,19 +278,15 @@ a.fa-twitter:link {
 	z-index: 1;
 	opacity: 1;
 	font-size: 90px;
+	color: #a6b1b7;
 	transform: translate(-50%, -50%);
 }
 @media (max-width:940px)
 {
-	.angle-down {
+	.fa-angle-down {
 		animation: angle-down-2 2s infinite;
 		bottom: 0;
 	}
-}
-.angle-down > i {
-	float: left;
-	text-align: center;
-	color: #a6b1b7;
 }
 @keyframes angle-down {
 	0%{
