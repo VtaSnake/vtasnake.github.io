@@ -1,16 +1,16 @@
-body, html {
+body, html{
 	height: 100vh;
 	padding: 0;
 	margin: 0;
 	font-family: Arial, sans-serif;
 }
-@font-face {
+@font-face{
 	font-family: 'Beon Medium';
-	src: url('../font/Beon.otf') format('opentype');
+	src: url('font/Beon.otf') format('opentype');
 }
-section:nth-child(1) {
+section:nth-child(1){
 	height: 100vh;
-	background-image: url('../img/wall.jpg');
+	background-image: url('img/wall.jpg');
 	position: relative;
 	background-attachment: fixed;
 	background-position: center center;
@@ -21,19 +21,19 @@ section:nth-child(1) {
 	background-size: cover;
 	z-index: 1;
 }
-@media only screen and (max-width: 1024px) {
-	section:nth-child(1) {
+@media only screen and (max-width: 1024px){
+	section:nth-child(1){
 	  background-attachment: scroll;
 	}
 }
-h1.neon {
+h1.neon{
 	color: #fff;
 	font-weight: 200;
 	text-align: center;
 	text-transform: uppercase;
 	opacity: 1;
 }
-h1.neon.first {
+h1.neon.first{
 	animation: text 1s;
 	white-space: nowrap;
 	font-size: 100px;
@@ -56,7 +56,7 @@ h1.neon.first {
 		font-size: 60px;
 	}
 }
-h1.neon.second {
+h1.neon.second{
 	animation: text 3s;
 	white-space: nowrap;
 	font-size: 30px;
@@ -79,7 +79,7 @@ h1.neon.second {
 		font-size: 20px;
 	}
 }
-@keyframes text {
+@keyframes text{
 	0%{
 	opacity: 0;
 	}
@@ -88,35 +88,35 @@ h1.neon.second {
 	}
 }
 /* FLICKERING */
-span.flickering-1 {
+span.flickering-1{
 	font-family: 'Beon Medium';
 	animation: flickering-1 6s infinite;
 }
-span.flickering-2 {
+span.flickering-2{
 	font-family: 'Beon Medium';
 	animation: flickering-2 3s infinite;
 }
-span.flickering-3 {
+span.flickering-3{
 	font-family: 'Beon Medium';
 	animation: flickering-3 5s infinite;
 }
-span.flickering-4 {
+span.flickering-4{
 	font-family: 'Beon Medium';
 	animation: flickering-3 4.5s infinite;
 }
-span.flickering-5 {
+span.flickering-5{
 	font-family: 'Beon Medium';
 	animation: flickering-3 5.5s infinite;
 }
 /* ANIMATIONS */
-@keyframes flickering-1 {
+@keyframes flickering-1{
 	0% { opacity: 1; }
 	52% { opacity: 1; }
 	55% { opacity: 0; }
 	56% { opacity: 1; }
 	100% { opacity: 1; }
 }
-@keyframes flickering-2 {
+@keyframes flickering-2{
 	0% { opacity: 1; }
 	62% { opacity: 1; }
 	65% { opacity: 0; }
@@ -127,7 +127,7 @@ span.flickering-5 {
 	74% { opacity: 1; }
 	100% { opacity: 1; }
 }
-@keyframes flickering-3 {
+@keyframes flickering-3{
 	0% { opacity: 1; }
 	82% { opacity: 1; }
 	84% { opacity: 0; }
@@ -138,7 +138,7 @@ span.flickering-5 {
 	91% { opacity: 1; }
 	100% { opacity: 1; }
 }
-@keyframes flickering-4 {
+@keyframes flickering-4{
 	0% { opacity: 1; }
 	82% { opacity: 1; }
 	85% { opacity: 1; }
@@ -147,7 +147,7 @@ span.flickering-5 {
 	91% { opacity: 1; }
 	100% { opacity: 1; }
 }
-@keyframes flickering-5 {
+@keyframes flickering-5{
 	0% { opacity: 1; }
 	62% { opacity: 1; }
 	65% { opacity: 0; }
@@ -156,7 +156,7 @@ span.flickering-5 {
 	70% { opacity: 1; }
 	100% { opacity: 1; }
 }
-.container {
+.container{
 	animation: social 2s;
 	position: fixed;
 	display: flex;
@@ -168,12 +168,12 @@ span.flickering-5 {
 }
 @media (max-width:720px)
 {
-	.container {
+	.container{
 		top: 20%;
 		font-size: 40px;
 	}
 }
-@keyframes social {
+@keyframes social{
 	0%{
 	opacity: 0;
 	}
@@ -181,7 +181,7 @@ span.flickering-5 {
 	opacity: 0.75;
 	}
 }
-.container > a {
+.container > a{
 	float: left;
 	margin: 10px 10px;
 	width: 80px;
@@ -195,54 +195,54 @@ span.flickering-5 {
 }
 @media (max-width:720px)
 {
-	.container > a {
+	.container > a{
 		margin: 5px 5px;
 		width: 65px;
 		height: 65px;
 		line-height: 65px;
 	}
 }
-a.fa-youtube {
+a.fa-youtube{
 	background: #ff0000;
 }
-a.fa-instagram {
+a.fa-instagram{
 	background: #c32aa3;
 }
-a.fa-twitch {
+a.fa-twitch{
 	background: #6441a4;
 }
-a.fa-twitter {
+a.fa-twitter{
 	background: #1da1f2;
 }
-a.fa-youtube:hover {
+a.fa-youtube:hover{
 	color: #ff0000;
 	background: #fff;
 }
-a.fa-instagram:hover {
+a.fa-instagram:hover{
 	color: #c32aa3;
 	background: #fff;
 }
-a.fa-twitch:hover {
+a.fa-twitch:hover{
 	color: #6441a4;
 	background: #fff;
 }
-a.fa-twitter:hover {
+a.fa-twitter:hover{
 	color: #1da1f2;
 	background: #fff;
 }
-a.fa-youtube:link {
+a.fa-youtube:link{
 	text-decoration: none;
 }
-a.fa-instagram:link {
+a.fa-instagram:link{
 	text-decoration: none;
 }
-a.fa-twitch:link {
+a.fa-twitch:link{
 	text-decoration: none;
 }
-a.fa-twitter:link {
+a.fa-twitter:link{
 	text-decoration: none;
 }
-.fa-angle-down {
+.fa-angle-down{
 	animation: angle-down 2s infinite;
 	position: fixed;
 	bottom: 0;
@@ -252,7 +252,7 @@ a.fa-twitter:link {
 	color: #a6b1b7;
 	transform: translate(-50%, -50%);
 }
-@keyframes angle-down {
+@keyframes angle-down{
 	0%{
 	bottom: 2%;
 	opacity: 0;
@@ -262,17 +262,17 @@ a.fa-twitter:link {
 	opacity: 1;
 	}
 }
-.fa-angle-down:link {
+.fa-angle-down:link{
 	text-decoration: none;
 }
-section:nth-child(2) {
+section:nth-child(2){
 	height: 100vh;
 	background-color: #282828;
 	position: relative;
 	box-shadow: -5px -5px 5px #a6b1b7, 5px -5px 5px #a6b1b7;
 	z-index: 2;
 }
-.bar {
+.bar{
 	width: 100%;
 	height: 3px;
 	background-color: #159760;
@@ -280,7 +280,7 @@ section:nth-child(2) {
 	top: 0;
 	z-index: 1;
 }
-.text {
+.text{
 	float: left;
 	text-align: center;
 	color: #a6b1b7;
@@ -293,12 +293,12 @@ section:nth-child(2) {
 }
 @media (min-width:768px)
 {
-	.text {
+	.text{
 		top: 15%;
 		font-size: 18px
 	}
 }
-div.video {
+div.video{
 	width: 660px;
 	height: 380px;
 	background-color: #a6b1b7;
@@ -312,13 +312,13 @@ div.video {
 }
 @media (max-width:768px)
 {
-	div.video {
+	div.video{
 		width: 303px;
 		height: 177px;
 		top: 70%;
 	}
 }
-div.video > iframe {
+div.video > iframe{
 	width: 640px;
 	height: 360px;
 	position: absolute;
@@ -329,12 +329,12 @@ div.video > iframe {
 }
 @media (max-width:768px)
 {
-	div.video > iframe {
+	div.video > iframe{
 		width: 288px;
 		height: 162px;
 	}
 }
-.footer {
+.footer{
 	height: 80px;
 	position: relative;
 	top: 15%;
@@ -344,11 +344,11 @@ div.video > iframe {
 }
 @media (max-width:1024px)
 {
-	.footer {
+	.footer{
 		opacity: 0;
 	}
 }
-.footer > p {
+.footer > p{
 	color: #282828;
 	position: absolute;
 	bottom: 0;
@@ -358,7 +358,7 @@ div.video > iframe {
 }
 @media (max-width:1024px)
 {
-	.footer > p {
+	.footer > p{
 		opacity: 0;
 	}
 }
