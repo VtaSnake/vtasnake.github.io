@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="cs-CZ">
 <head>
   <meta charset="UTF-8" />
@@ -23,80 +23,41 @@
   <meta property="og:site_name" content="Vta Snake | Official website" />
 
   <link rel="shortcut icon" type="ico" href="img/icon.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
-<div class="bar"></div>
-	<div id="fullpage">
-		<section>
-			<h1 class="neon first"><span class="flickering-3">V</span>t<span class="flickering-1">a</span> Sna<span class="flickering-2">k</span>e</h1>
-			<h1 class="neon second">O<span class="flickering-4">f</span>icial <span class="flickering-5">w</span>ebsite</h1>
+<section>
+  <h1 class="neon first"><span class="flickering-3">V</span>t<span class="flickering-1">a</span> Sna<span class="flickering-2">k</span>e</h1>
+  <h1 class="neon second">O<span class="flickering-4">f</span>icial <span class="flickering-5">w</span>ebsite</h1>
 
-			<div class="container">
-				<a href="https://www.youtube.com/VTAsro" rel="nofollow" target="_blank" class="fab fa-youtube"></a>
-				<a href="https://www.instagram.com/vtasnake" rel="nofollow" target="_blank" class="fab fa-instagram"></a>
-				<a href="https://www.twitch.tv/vtasnake" rel="nofollow" target="_blank" class="fab fa-twitch"></a>
-				<a href="https://twitter.com/vtasnake" rel="nofollow" target="_blank" class="fab fa-twitter"></a>
-      </div>
+  <div class="container">
+    <a href="https://www.youtube.com/VTAsro" rel="nofollow" target="_blank" class="fab fa-youtube"></a>
+    <a href="https://www.instagram.com/vtasnake" rel="nofollow" target="_blank" class="fab fa-instagram"></a>
+    <a href="https://www.twitch.tv/vtasnake" rel="nofollow" target="_blank" class="fab fa-twitch"></a>
+    <a href="https://twitter.com/vtasnake" rel="nofollow" target="_blank" class="fab fa-twitter"></a>
+  </div>
+  
+  <a href="#!" class="fas fa-angle-down"></a>
+</section>
+<section id="!">
+  <div class="bar"></div>
 
-      <div class="fas fa-expand" onclick="viewPage();"></div>
+  <div class="text">
+    <br><b>Vítám všechny na mém oficiálním webu!</b>
+    <br>Natáčím videa na YouTube a dávám fotky na Instagram.
+    <br>Snažím se každý týden zveřejnit video a fotku.
+    <br>Ne vždy se mi to podaří.
+  </div>
 
-			<div class="fas fa-angle-down"></div>
-		</section>
-		<section>
-      <span class="info">
-        <br><b>Vítám všechny na mém oficiálním webu!</b>
-        <br>Natáčím videa na YouTube a dávám fotky na Instagram.
-        <br>Snažím se každý týden zveřejnit video a fotku.
-        <br>Ne vždy se mi to podaří.
-      </span>
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/04dYT3uPEWc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/04dYT3uPEWc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <footer class="footer">
-        <p>© 2018 Vta Snake</p>
-      </footer>
-    </section>
-	</div>
-<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js'></script>
-<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-<script type="text/javascript" src='./js/jquery.fullpage.js'></script>
-<script type="text/javascript">
-	FastClick.attach(document.body);
-	$('#fullpage').fullpage();
-</script>
-<script type="text/javascript">
-	function viewPage () {
-		var el = document.body;
-		toggleFullscreen(el);
-	};
-	function toggleFullscreen (el) {
-		if(document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement || document.msFullscreenElement){
-			if(document.exitFullscreen){
-				document.exitFullscreen();
-			}else if(document.mozCancelFullScreen){
-				document.mozCancelFullScreen();
-			}else if(document.webkitExitFullscreen){
-				document.webkitExitFullscreen();
-			}else if(document.msExitFullscreen){
-				document.msExitFullscreen();
-			}
-		}else{
-			if(document.documentElement.requestFullscreen){
-				el.requestFullscreen();
-			}else if(document.documentElement.mozRequestFullScreen){
-				el.mozRequestFullScreen();
-			}else if(document.documentElement.webkitRequestFullscreen){
-				el.webkitRequestFullscreen();
-			}else if(document.documentElement.msRequestFullscreen){
-				el.msRequestFullscreen();
-			}
-		}
-	};
-</script>
+  <footer class="footer">
+    <p>© 2018 Vta Snake</p>
+  </footer>
+</section>
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
