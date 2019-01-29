@@ -10,7 +10,7 @@ body, html {
 	src: url('../font/Beon.otf') format('opentype');
 }
 section:nth-child(1) {
-	height: 100vh;
+	height: 100%;
 	background-image: url('../img/wall.jpg');
 	position: relative;
 	background-attachment: fixed;
