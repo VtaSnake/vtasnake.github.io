@@ -3,7 +3,6 @@ body, html {
 	padding: 0;
 	margin: 0;
 	font-family: Arial, sans-serif;
-	scroll-behavior: smooth;
 }
 @font-face {
 	font-family: 'Beon Medium';
@@ -14,11 +13,12 @@ section:nth-child(1) {
 	background-image: url('../img/wall.jpg');
 	position: relative;
 	background-attachment: fixed;
-	background-position: center;
+	background-position: center center;
 	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
-	margin-left: auto;
-	margin-right: auto;
 	z-index: 1;
 }
 @media only screen and (max-width: 1024px) {
