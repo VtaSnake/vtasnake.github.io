@@ -245,13 +245,6 @@ a.fa-twitter:link {
 	color: #a6b1b7;
 	transform: translate(-50%, -50%);
 }
-@media (max-width:940px)
-{
-	.fa-angle-down {
-		animation: angle-down-2 2s infinite;
-		bottom: 0;
-	}
-}
 @keyframes angle-down {
 	0%{
 	bottom: 2%;
@@ -259,16 +252,6 @@ a.fa-twitter:link {
 	}
 	100%{
 	bottom: -3%;
-	opacity: 1;
-	}
-}
-@keyframes angle-down-2 {
-	0%{
-	bottom: 5%;
-	opacity: 0;
-	}
-	100%{
-	bottom: 0;
 	opacity: 1;
 	}
 }
