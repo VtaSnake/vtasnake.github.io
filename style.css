@@ -1,5 +1,5 @@
 body, html{
-	height: 100vh;
+	height: 100%;
 	padding: 0;
 	margin: 0;
 	font-family: Arial, sans-serif;
@@ -9,15 +9,12 @@ body, html{
 	src: url('font/Beon.otf') format('opentype');
 }
 section:nth-child(1){
-	height: 100vh;
+	height: 100%;
 	background-image: url('img/wall.jpg');
 	position: relative;
 	background-attachment: fixed;
-	background-position: center center;
+	background-position: center;
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	z-index: 1;
 }
@@ -290,7 +287,7 @@ a.fa-twitter:link{
 	text-decoration: none;
 }
 section:nth-child(2){
-	height: 100vh;
+	height: 100%;
 	background-color: #282828;
 	position: relative;
 	box-shadow: -5px -5px 5px #a6b1b7, 5px -5px 5px #a6b1b7;
