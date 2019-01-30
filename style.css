@@ -50,10 +50,16 @@ h1.neon.first{
 			0px 0px 50px #159760,
 			0px 0px 60px #159760;
 }
-@media (max-width:720px)
+@media (max-width:700px)
 {
 	h1.neon.first{
 		font-size: 60px;
+	}
+}
+@media (max-width:1024px)
+{
+	h1.neon.first{
+		position: absolute;
 	}
 }
 h1.neon.second{
@@ -73,10 +79,16 @@ h1.neon.second{
 			0px 0px 50px #d31f82,
 			0px 0px 60px #d31f82;
 }
-@media (max-width:720px)
+@media (max-width:700px)
 {
 	h1.neon.second{
 		font-size: 20px;
+	}
+}
+@media (max-width:1024px)
+{
+	h1.neon.second{
+		position: absolute;
 	}
 }
 @keyframes text{
@@ -166,11 +178,17 @@ span.flickering-5{
 	font-size: 50px;
 	transform: translate(-50%, -50%);
 }
-@media (max-width:720px)
+@media (max-width:700px)
 {
 	.container{
 		top: 20%;
 		font-size: 40px;
+	}
+}
+@media (max-width:1024px)
+{
+	.container{
+		position: absolute;
 	}
 }
 @keyframes social{
@@ -193,7 +211,7 @@ span.flickering-5{
 	color: #fff;
 	transition: 250ms;
 }
-@media (max-width:720px)
+@media (max-width:700px)
 {
 	.container > a{
 		margin: 5px 5px;
@@ -252,6 +270,12 @@ a.fa-twitter:link{
 	color: #a6b1b7;
 	transform: translate(-50%, -50%);
 }
+@media (max-width:1024px)
+{
+	.fa-angle-down{
+		position: absolute;
+	}
+}
 @keyframes angle-down{
 	0%{
 	bottom: 2%;
@@ -291,7 +315,7 @@ section:nth-child(2){
 	line-height: 25px;
 	transform: translate(-50%, -50%);
 }
-@media (min-width:768px)
+@media (min-width:700px)
 {
 	.text{
 		top: 15%;
@@ -310,7 +334,7 @@ div.video{
 	z-index: 1;
 	transform: translate(-50%, -50%);
 }
-@media (max-width:768px)
+@media (max-width:700px)
 {
 	div.video{
 		width: 303px;
@@ -327,7 +351,7 @@ div.video > iframe{
 	margin: auto;
 	border-radius: 5px;
 }
-@media (max-width:768px)
+@media (max-width:700px)
 {
 	div.video > iframe{
 		width: 288px;
