@@ -278,11 +278,11 @@ a.fa-twitter:link{
 }
 @keyframes angle-down{
 	0%{
-	bottom: 2%;
+	bottom: 5%;
 	opacity: 0;
 	}
 	100%{
-	bottom: -3%;
+	bottom: 0;
 	opacity: 1;
 	}
 }
