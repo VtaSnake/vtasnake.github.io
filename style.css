@@ -11,14 +11,6 @@ section:nth-child(1){
 @media only screen and (max-width: 1024px){
 	section:nth-child(1) {background-attachment:scroll;}
 }
-.blackscreen{
-	animation: blackscreen 1s;
-	height: 100%;
-	background-color: #000;
-	position: relative;
-	opacity: 0;
-}
-@keyframes blackscreen{0%{opacity:1;}100%{opacity:0;}}
 h1.neon{
 	color: #fff;
 	font-weight: normal;
@@ -95,12 +87,7 @@ span.flickering1{font-family:"Beon Medium";animation:flickering1 6s infinite;}sp
 	transition: 250ms;
 }
 @media (max-width:700px){
-	.container > a{
-		margin: 5px 5px;
-		width: 65px;
-		height: 65px;
-		line-height: 65px;
-	}
+	.container > a {margin:5px 5px;width:65px;height:65px;line-height:65px;}
 }
 a.fa-youtube{background:#ff0000;}a.fa-instagram{background:#c32aa3;}a.fa-twitch{background:#6441a4;}a.fa-twitter{background:#1da1f2;}
 a.fa-youtube:hover{color:#ff0000;background:#fff;}a.fa-instagram:hover{color:#c32aa3;background:#fff;}a.fa-twitch:hover{color:#6441a4;background:#fff;}a.fa-twitter:hover{color:#1da1f2;background:#fff;}
