@@ -84,12 +84,10 @@ a.fa-youtube:link{text-decoration:none;}a.fa-instagram:link{text-decoration:none
 	opacity: 1;
 	font-size: 90px;
 	color: #a6b1b7;
-	transition: 200ms;
 	transform: translate(-50%, -50%);
 }
 @media (max-width:1024px){.fa-angle-down{position:absolute;}}
 @keyframes angle-down{0%{bottom:2%;opacity:0;}100%{bottom:-3%;opacity:1;}}
-.fa-angle-down:hover{color:#fff;}
 .fa-angle-down:link{text-decoration:none;}
 section:nth-child(2){
 	height: 100vh;
