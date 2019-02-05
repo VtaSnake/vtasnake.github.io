@@ -24,6 +24,7 @@
 
   <link rel="shortcut icon" type="ico" href="img/icon.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
@@ -43,7 +44,7 @@
 <section>
   <div class="bar"></div>
 
-  <div class="text">
+  <div class="text" data-aos="fade-up">
     <br><b>Vítám všechny na mém oficiálním webu!</b>
     <br>Natáčím videa na YouTube a dávám fotky na Instagram.
     <br>Snažím se každý týden zveřejnit video a fotku.
@@ -58,6 +59,13 @@
     <p>© 2018 Vta Snake</p>
   </footer>
 </section>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    easing: 'ease-out-back',
+    duration: 1000
+  });
+</script>
 <script type="text/javascript">
   function scrollToBottom() {
     window.scroll({

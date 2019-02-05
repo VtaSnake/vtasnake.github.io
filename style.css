@@ -17,7 +17,7 @@ h1.neon{
 	opacity: 1;
 }
 h1.neon.first{
-	animation: text 1.5s;
+	animation: neon 1.5s;
 	white-space: nowrap;
 	font-size: 100px;
 	font-family: "Beon Medium";
@@ -31,7 +31,7 @@ h1.neon.first{
 @media (max-width:680px){h1.neon.first{font-size:60px;}}
 @media (max-width:1024px){h1.neon.first{position:absolute;}}
 h1.neon.second{
-	animation: text2 2s;
+	animation: neon2 2s;
 	white-space: nowrap;
 	font-size: 30px;
 	font-family: "Beon Medium";
@@ -44,7 +44,7 @@ h1.neon.second{
 }
 @media (max-width:680px){h1.neon.second{font-size:20px;}}
 @media (max-width:1024px){h1.neon.second{position:absolute;}}
-@keyframes text{0%{opacity:0;}10%{opacity:1;}15%{opacity:0;}20%{opacity:1;}25%{opacity:0;}30%{opacity:1;}35%{opacity:0;}40%{opacity:1;}45%{opacity:0;}100%{opacity:1;}}@keyframes text2{0%{opacity:0;}15%{opacity:1;}20%{opacity:0;}25%{opacity:1;}30%{opacity:0;}35%{opacity:1;}40%{opacity:0;}45%{opacity:1;}50%{opacity:0;}100%{opacity:1;}}
+@keyframes neon{0%{opacity:0;}20%{opacity:1;}25%{opacity:0;}30%{opacity:1;}35%{opacity:0;}40%{opacity:1;}45%{opacity:0;}50%{opacity:1;}55%{opacity:0;}100%{opacity:1;}}@keyframes neon2{0%{opacity:0;}25%{opacity:1;}30%{opacity:0;}35%{opacity:1;}40%{opacity:0;}45%{opacity:1;}50%{opacity:0;}55%{opacity:1;}60%{opacity:0;}100%{opacity:1;}}
 span.flickering1{font-family:"Beon Medium";animation:flickering1 6s infinite;}span.flickering2{font-family:"Beon Medium";animation:flickering2 3s infinite;}span.flickering3{font-family:"Beon Medium";animation:flickering3 5s infinite;}span.flickering4{font-family:"Beon Medium";animation:flickering3 4.5s infinite;}span.flickering5{font-family:"Beon Medium";animation:flickering5 5.5s infinite;}
 @keyframes flickering1{0%{opacity:1;}52%{opacity:1;}55%{opacity:0;}56%{opacity:1;}100%{opacity:1;}}@keyframes flickering2{0%{opacity:1;}62%{opacity:1;}65%{opacity:0;}66%{opacity:1;}69%{opacity:0;}70%{opacity:1;}73%{opacity:0;}74%{opacity:1;}100%{opacity:1;}}@keyframes flickering3{0%{opacity:1;}82%{opacity:1;}84%{opacity:0;}85%{opacity:1;}87%{opacity:0;}88%{opacity:1;}90%{opacity:0;}91%{opacity:1;}100%{opacity:1;}}@keyframes flickering5{0%{opacity:1;}62%{opacity:1;}65%{opacity:0;}67%{opacity:1;}70%{opacity:0;}75%{opacity:1;}100%{opacity:1;}}
 .container{
@@ -104,18 +104,16 @@ section:nth-child(2){
 	z-index: 1;
 }
 .text{
-	float: left;
 	text-align: center;
 	color: #a6b1b7;
 	position: relative;
-	top: 15%;
-	left: 50%;
+	top: 10%;
+	margin: 0 auto;
 	font-size: 18px;
 	line-height: 25px;
 	text-shadow: 1px 1px 2px #000;
-	transform: translate(-50%, -50%);
 }
-@media (max-width:680px){.text{top:30%;font-size:15px;line-height:22px;}}
+@media (max-width:680px){.text{top:15%;font-size:15px;line-height:22px;}}
 div.video{
 	width: 660px;
 	height: 380px;
@@ -123,12 +121,12 @@ div.video{
 	border-radius: 8px;
 	text-align: center;
 	position: relative;
-	top: 60%;
+	top: 50%;
 	left: 50%;
 	z-index: 1;
 	transform: translate(-50%, -50%);
 }
-@media (max-width:680px){div.video{width:303px;height:177px;top:70%;}}
+@media (max-width:680px){div.video{width:303px;height:177px;top:45%;}}
 div.video>iframe{
 	width: 640px;
 	height: 360px;
@@ -142,7 +140,7 @@ div.video>iframe{
 .footer{
 	height: 80px;
 	position: relative;
-	top: 15%;
+	top: 5%;
     background-color: #a6b1b7;
 	text-align: center;
 	margin: 0 auto;
