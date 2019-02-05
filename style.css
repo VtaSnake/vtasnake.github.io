@@ -113,7 +113,7 @@ section:nth-child(2){
 	line-height: 25px;
 	text-shadow: 1px 1px 2px #000;
 }
-@media (max-width:680px){.text{top:15%;font-size:15px;line-height:22px;}}
+@media (max-width:680px){.text{font-size:15px;line-height:22px;}}
 div.video{
 	width: 660px;
 	height: 380px;
