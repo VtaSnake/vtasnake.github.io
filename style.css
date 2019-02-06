@@ -78,12 +78,12 @@ a.fa-youtube:hover{color:#ff0000;background:#fff;}a.fa-instagram:hover{color:#c3
 a.fa-youtube:link{text-decoration:none;}a.fa-instagram:link{text-decoration:none;}a.fa-twitch:link{text-decoration:none;}a.fa-twitter:link{text-decoration:none;}
 .fa-angle-down{
 	animation: angle-down 2s infinite;
+	color: #a6b1b7;
 	position: fixed;
 	bottom: -3%;
 	left: 50%;
 	opacity: 1;
 	font-size: 90px;
-	color: #a6b1b7;
 	transform: translate(-50%, -50%);
 }
 @media (max-width:1024px){.fa-angle-down{position:absolute;}}
