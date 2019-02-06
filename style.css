@@ -143,7 +143,6 @@ div.video>iframe{
 	top: 5%;
     background-color: #a6b1b7;
 	text-align: center;
-	margin: 0 auto;
 }
 @media (max-width:1024px){.footer{opacity:0;}}
 .footer>p{
