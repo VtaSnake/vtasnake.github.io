@@ -9,6 +9,36 @@ section:nth-child(1){
 	background-size: cover;
 }
 @media only screen and (max-width:1024px){section:nth-child(1){background-attachment:scroll;}}
+.bar{
+	width: 100%;
+	height: 3px;
+	position: fixed;
+	top: 0;
+	background-color: #159760;
+	z-index: 1;
+}
+.scroll-left{
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	background-color: #282828;
+}
+.scroll-left a{
+	animation: scroll-left 10s linear infinite;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	color: #a6b1b7;
+	line-height: 50px;
+	text-align: center;
+	transform: translateX(100%);
+}
+@media (max-width:680px){.scroll-left a{animation: scroll-left 5s linear infinite;}}
+@keyframes scroll-left{0%{transform:translateX(100%);}100%{transform:translateX(-100%);}}
+.scroll-left a:link{text-decoration:none}
 h1.neon{
 	color: #fff;
 	font-weight: normal;
@@ -57,7 +87,7 @@ span.flickering1{font-family:"Beon Medium";animation:flickering1 6s infinite;}sp
 	font-size: 50px;
 	transform: translate(-50%, -50%);
 }
-@media (max-width:680px){.container{font-size:40px;}}
+@media (max-width:680px){.container{top:20%;font-size:40px;}}
 @media (max-width:1024px){.container{position:absolute;}}
 @keyframes social{0%{opacity:0;}100%{opacity:0.75;}}
 .container>a{
@@ -80,14 +110,14 @@ a.fa-youtube:link{text-decoration:none;}a.fa-instagram:link{text-decoration:none
 	animation: angle-down 2s infinite;
 	color: #a6b1b7;
 	position: fixed;
-	bottom: -3%;
+	bottom: -5%;
 	left: 50%;
 	opacity: 1;
 	font-size: 90px;
 	transform: translate(-50%, -50%);
 }
 @media (max-width:1024px){.fa-angle-down{position:absolute;}}
-@keyframes angle-down{0%{bottom:2%;opacity:0;}100%{bottom:-3%;opacity:1;}}
+@keyframes angle-down{0%{bottom:3%;opacity:0;}100%{bottom:-3%;opacity:1;}}
 .fa-angle-down:link{text-decoration:none;}
 section:nth-child(2){
 	height: 100vh;
@@ -95,19 +125,11 @@ section:nth-child(2){
 	position: relative;
 	box-shadow: -5px -5px 5px #a6b1b7, 5px -5px 5px #a6b1b7;
 }
-.bar{
-	width: 100%;
-	height: 3px;
-	background-color: #159760;
-	position: fixed;
-	top: 0;
-	z-index: 1;
-}
 .text{
 	text-align: center;
-	color: #a6b1b7;
 	position: relative;
 	top: 10%;
+	color: #a6b1b7;
 	margin: 0 auto;
 	font-size: 18px;
 	line-height: 25px;
