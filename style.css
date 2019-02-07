@@ -25,6 +25,7 @@ section:nth-child(1){
 	top: 0;
 	background-color: #282828;
 }
+@media (max-width:1024px){.scroll-left{position:absolute}}
 .scroll-left a{
 	animation: scroll-left 10s linear infinite;
 	position: absolute;
