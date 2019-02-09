@@ -121,14 +121,15 @@ a.fa-youtube:link{text-decoration:none;}a.fa-instagram:link{text-decoration:none
 	opacity: 1;
 	font-size: 90px;
 	transform: translate(-50%, -50%);
+	text-shadow: -2px 2px 2px #000, 2px 2px 2px #000;
 }
 @media (max-width:1024px){.fa-angle-down{position:absolute;}}
 @keyframes angle-down{0%{bottom:3%;opacity:0;}100%{bottom:-3%;opacity:1;}}
 .fa-angle-down:link{text-decoration:none;}
 section:nth-child(2){
 	height: 100vh;
-	background-color: #282828;
 	position: relative;
+	background-color: #282828;
 	box-shadow: -4px -4px 8px #a6b1b7, 4px -4px 8px #a6b1b7;
 }
 .text{
@@ -145,7 +146,6 @@ section:nth-child(2){
 div.video{
 	width: 660px;
 	height: 380px;
-	text-align: center;
 	position: relative;
 	top: 50%;
 	left: 50%;
@@ -170,7 +170,7 @@ div.video>iframe{
 	text-align: center;
 	position: relative;
 	top: 5%;
-    background-color: #a6b1b7;
+	background-color: #a6b1b7;
 }
 @media (max-width:1024px){.footer{opacity:0;}}
 .footer>p{
