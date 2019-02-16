@@ -45,7 +45,7 @@
     <a href="https://twitter.com/vtasnake" rel="nofollow" target="_blank" class="fab fa-twitter"></a>
   </div>
 
-  <a href="#1" class="fas fa-angle-down" ></a>
+  <a href="#1" class="fas fa-angle-down"></a>
 </section>
 <section id="1">
   <div class="text" data-aos="fade-up">
@@ -73,20 +73,33 @@ AOS.init({
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
 $('a[href*="#"]')
+.not('[href="#"]')
+.not('[href="#0"]')
 .click(function(event) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 500, function() {{
-            return false;
-          };
-        });
-      }
+  if (
+    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+    &&
+    location.hostname == this.hostname
+  ) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000, function() {
+        var $target = $(target);
+        $target.focus();
+        if ($target.is(":focus")) {
+          return false;
+        } else {
+          $target.attr('tabindex','-1');
+          $target.focus();
+        };
+      });
     }
-  );
+  }
+});
 </script>
 <script type="application/ld+json">
 {
