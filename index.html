@@ -45,7 +45,7 @@
     <a href="https://twitter.com/vtasnake" rel="nofollow" target="_blank" class="fab fa-twitter"></a>
   </div>
 
-  <a href="#1" id="button" class="fas fa-angle-down" ></a>
+  <a href="#1" class="fas fa-angle-down" ></a>
 </section>
 <section id="1">
   <div class="text" data-aos="fade-up">
@@ -72,30 +72,21 @@ AOS.init({
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var $target = $(this.hash);
-      $target = $target.length ? $target : $('[name=' + this.hash.slice(1) +']');
-
-      if ($target.length) {
-        var baseMinScrollTime = 500,
-            baseMaxScrollTime = 500;
-
-        var docHeight = $(document).height(),
-            triggerTop = $(this).offset().top,
-            targetTop = $target.offset().top;
-
-        var scrollProportion = (targetTop - triggerTop) / docHeight,
-            relativeTime = ((baseMaxScrollTime - baseMinScrollTime) * scrollProportion) + baseMinScrollTime,
-            scrollTime = -1 * (1 - relativeTime);
-
+$('a[href*="#"]')
+.click(function(event) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        event.preventDefault();
         $('html, body').animate({
-          scrollTop: targetTop
-        }, scrollTime);
-        return false;
+          scrollTop: target.offset().top
+        }, 500, function() {{
+            return false;
+          };
+        });
       }
     }
-  });
+  );
 </script>
 <script type="application/ld+json">
 {
