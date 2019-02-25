@@ -28,19 +28,19 @@ section:nth-child(1){
 }
 @media (max-width:1024px){.marquee{position:relative}}
 .marquee a{
-	animation: marquee 8s linear infinite;
+	animation: marquee 10s linear infinite;
 	position: absolute;
-	display: block;
 	width: 400px;
 	height: 50px;
 	color: #a6b1b7;
 	font-size: 18px;
 	line-height: 50px;
 	text-align: center;
+	transform: translateX(100%);
 	text-shadow: 1px 1px 2px #000;
 }
 @media (max-width:680px){.marquee a{animation: marquee 5s linear infinite;}}
-@keyframes marquee{0%{margin-left:100%;}100%{margin-left:-400px;}}
+@keyframes marquee{0%{transform:translateX(100%);}100%{transform:translateX(-100%);}}
 .marquee a:link{text-decoration:none}
 h1.neon{
 	color: #fff;
