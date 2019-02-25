@@ -30,8 +30,8 @@ section:nth-child(1){
 .marquee a{
 	animation: marquee 10s linear infinite;
 	position: absolute;
-	width: 400px;
-	height: 50px;
+	width: 100%;
+	height: 100%;
 	color: #a6b1b7;
 	font-size: 18px;
 	line-height: 50px;
