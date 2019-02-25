@@ -26,7 +26,7 @@ section:nth-child(1){
 	background-color: #282828;
 	box-shadow: -4px 4px 4px #000, 4px 4px 4px #000;
 }
-@media (max-width:1024px){.marquee{position:absolute}}
+@media (max-width:1024px){.marquee{position:relative}}
 .marquee a{
 	animation: marquee 8s linear infinite;
 	position: absolute;
