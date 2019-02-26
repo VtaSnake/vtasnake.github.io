@@ -32,10 +32,10 @@ section:nth-child(1){
 	animation: marquee 8s linear infinite;
 	position: absolute;
 	padding-left: 100%;
+	text-align: center;
 	color: #a6b1b7;
 	font-size: 18px;
 	line-height: 50px;
-	text-align: center;
 	text-shadow: 1px 1px 2px #000;
 }
 @media (max-width:680px){.marquee a{animation: marquee 5s linear infinite;}}
@@ -130,10 +130,10 @@ section:nth-child(2){
 	box-shadow: -4px -4px 8px #a6b1b7, 4px -4px 8px #a6b1b7;
 }
 .text{
-	text-align: center;
 	position: relative;
 	top: 10%;
 	margin: 0 auto;
+	text-align: center;
 	color: #a6b1b7;
 	font-size: 18px;
 	line-height: 25px;
@@ -142,9 +142,9 @@ section:nth-child(2){
 @media (max-width:680px){.text{font-size:15px;line-height:22px;}}
 .footer{
 	height: 80px;
-	text-align: center;
 	position: relative;
 	top: 45%;
+	text-align: center;
 	background-color: #a6b1b7;
 }
 @media (max-width:680px){.footer{height:50px;top:40%;}}
