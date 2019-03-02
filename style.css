@@ -38,7 +38,7 @@ section:nth-child(1){
 	line-height: 50px;
 	text-shadow: 1px 1px 2px #000;
 }
-@media (max-width:680px){.marquee a{animation: marquee 5s linear infinite;}}
+@media (max-width:680px){.marquee a{animation: marquee 4s linear infinite;}}
 @keyframes marquee{0%{transform:translateX(0);}100%{transform:translateX(-100%);}}
 .marquee a:link{text-decoration:none}
 h1.neon{
