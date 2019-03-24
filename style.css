@@ -1,4 +1,4 @@
-body,html{height:100%;padding:0;margin:0;font-family:"Arial",sans-serif;}@font-face{font-family:"Beon Medium";src:url('font/Beon.otf') format('opentype');}
+html,body{height:100%;padding:0;margin:0;font-family:"Arial",sans-serif;}@font-face{font-family:"Beon Medium";src:url('font/Beon.otf') format('opentype');}
 section:nth-child(1){
 	height: 100%;
 	background-image: url('img/wall.jpg');
