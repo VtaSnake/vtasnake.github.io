@@ -116,9 +116,9 @@ h1.neon.second{
 @keyframes neon{0%{opacity:0;}10%{opacity:0;}10.1%{opacity:1;}10.2%{opacity:0;}20%{opacity:0;}20.1%{opacity:1;}20.6%{opacity:0;}30%{opacity:0;}30.1%{opacity:1;}30.5%{opacity:1;}30.6%{opacity:0;}45%{opacity:0;}45.1%{opacity:1;}50%{opacity:1;}55%{opacity:1;}55.1%{opacity:0;}57%{opacity:0;}57.1%{opacity:1;}60%{opacity:1;}60.1%{opacity:0;}65%{opacity:0;}65.1%{opacity:1;}75%{opacity:1;}75.1%{opacity:0;}77%{opacity:0;}77.1%{opacity:1;}85%{opacity:1;}85.1%{opacity:0;}86%{opacity:0;}86.1%{opacity:1;}100%{opacity:1;}}
 span.flickering1{font-family:"Beon Medium";animation:flickering1 6s infinite;}span.flickering2{font-family:"Beon Medium";animation:flickering2 3s infinite;}span.flickering3{font-family:"Beon Medium";animation:flickering3 5s infinite;}span.flickering4{font-family:"Beon Medium";animation:flickering3 4.5s infinite;}span.flickering5{font-family:"Beon Medium";animation:flickering5 5.5s infinite;}
 @keyframes flickering1{0%{opacity:1;}52%{opacity:1;}55%{opacity:0;}56%{opacity:1;}100%{opacity:1;}}@keyframes flickering2{0%{opacity:1;}62%{opacity:1;}65%{opacity:0;}66%{opacity:1;}69%{opacity:0;}70%{opacity:1;}73%{opacity:0;}74%{opacity:1;}100%{opacity:1;}}@keyframes flickering3{0%{opacity:1;}82%{opacity:1;}84%{opacity:0;}85%{opacity:1;}87%{opacity:0;}88%{opacity:1;}90%{opacity:0;}91%{opacity:1;}100%{opacity:1;}}@keyframes flickering5{0%{opacity:1;}62%{opacity:1;}65%{opacity:0;}67%{opacity:1;}70%{opacity:0;}75%{opacity:1;}100%{opacity:1;}}
-.egg{position:fixed;bottom:18px;right:18px;display:block;width:63px;height:90px;opacity:0.5;border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;background:linear-gradient(to bottom right, #fff5c3 30%, #282828 200%);transition:1000ms;box-shadow:4px 4px 8px #000;}
+.egg{position:fixed;bottom:18px;right:18px;display:block;width:63px;height:90px;opacity:0.15;border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;background:linear-gradient(to bottom right, #fff5c3 30%, #282828 200%);transition:1000ms;box-shadow:4px 4px 8px #000;}
 @media (max-width:760px){.egg{position:absolute;bottom:9px;right:9px;}}
-.egg:hover{opacity: 0.8;}
+.egg:hover{opacity:0.75;}
 .fa-angle-down{
 	animation: angle-down 2s infinite;
 	position: fixed;
