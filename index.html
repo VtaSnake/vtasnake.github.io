@@ -45,7 +45,7 @@
 		<h1 class="neon first"><span class="flickering3">V</span>T<span class="flickering1">A</span> SNA<span class="flickering2">K</span>E</h1>
     <h1 class="neon second">O<span class="flickering4">F</span>ICIAL <span class="flickering5">W</span>EBSITE</h1>
     
-    <div class="egg" title="vejce"></div>
+    <div id="egg" title="klikni na mě"></div>
 
 		<a href="#page" class="fas fa-angle-down"></a>
 	</div>
@@ -97,6 +97,15 @@ $('a[href*="#"]')
       });
     }
   }
+});
+</script>
+<script>
+  var div1 = document.getElementById('egg');
+  div1.addEventListener('click',function(){
+  var div2 =  document.createElement('div');
+  div2.setAttribute("id", "chick");
+  this.parentNode.appendChild(div2);
+  this.parentNode.removeChild(this);
 });
 </script>
 <script type="application/ld+json">
