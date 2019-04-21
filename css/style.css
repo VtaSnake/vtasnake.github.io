@@ -1,4 +1,4 @@
-*, *::after,*::before{-webkit-box-sizing:border-box;box-sizing:border-box;}body{font-family:Arial,sans-serif;}@font-face{font-family:"Beon Medium";src:url('../font/Beon.otf') format('opentype');}
+*, *::after,*::before{-webkit-box-sizing:border-box;box-sizing:border-box;}body{font-family:Arial,sans-serif;}@font-face{font-family:"Beon Medium";src:url('../font/Beon.otf') format('opentype');}.bar{width:100%;height:3px;position:fixed;background-color:#159760;z-index:3;}
 .cd-fixed-bg{
 	position: relative;
 	min-height: 100vh;
@@ -24,36 +24,11 @@
 }
 @media only screen and (min-width:767px){.cd-scrolling-bg{padding:5em 0;font-size:20px;line-height:2;letter-spacing:.007em;}}
 .cd-scrolling-bg__content{width:90%;max-width:767px;margin:0 auto;}
-.marquee{
-	position: fixed;
-	width: 100%;
-	height: 50px;
-	overflow: hidden;
-	white-space: nowrap;
-	background-color: #282828;
-	box-shadow: -4px 4px 4px #000, 4px 4px 4px #000;
-	z-index: 1;
-}
-@media only screen and (max-width:1024px){.marquee{position:relative}}
-.marquee a{
-	animation: marquee 8s linear infinite;
-	position: absolute;
-	padding-left: 100%;
-	text-align: center;
-	color: #a6b1b7;
-	font-size: 18px;
-	line-height: 50px;
-	letter-spacing: .007em;
-	text-shadow: 1px 1px 2px #000;
-}
-@media only screen and (max-width:767px){.marquee a{animation: marquee 4s linear infinite;}}
-@keyframes marquee{0%{transform:translateX(0);}100%{transform:translateX(-100%);}}
-.marquee a:link{text-decoration:none}
 .container{
 	animation: social 1s;
 	position: fixed;
 	display: flex;
-	top: 20%;
+	top: 15%;
 	left: 50%;
 	opacity: .75;
 	font-size: 50px;
@@ -74,7 +49,7 @@
 	background-color: #fff;
 	transition: 200ms;
 	text-shadow: 1px 1px 2px #000;
-	box-shadow: 4px 4px 8px #000;
+	box-shadow: 0px -5px 10px #000;
 }
 @media only screen and (max-width:767px){.container>a{margin:5px 5px;width:65px;height:65px;line-height:65px;}}
 a.fa-youtube{background-color:#ff0000;}a.fa-instagram{background-color:#c32aa3;}a.fa-twitch{background-color:#6441a4;}a.fa-twitter{background-color:#1da1f2;}
@@ -117,7 +92,7 @@ h1.neon.second{
 @keyframes neon{0%{opacity:0;}10%{opacity:0;}10.1%{opacity:1;}10.2%{opacity:0;}20%{opacity:0;}20.1%{opacity:1;}20.6%{opacity:0;}30%{opacity:0;}30.1%{opacity:1;}30.5%{opacity:1;}30.6%{opacity:0;}45%{opacity:0;}45.1%{opacity:1;}50%{opacity:1;}55%{opacity:1;}55.1%{opacity:0;}57%{opacity:0;}57.1%{opacity:1;}60%{opacity:1;}60.1%{opacity:0;}65%{opacity:0;}65.1%{opacity:1;}75%{opacity:1;}75.1%{opacity:0;}77%{opacity:0;}77.1%{opacity:1;}85%{opacity:1;}85.1%{opacity:0;}86%{opacity:0;}86.1%{opacity:1;}100%{opacity:1;}}
 span.flickering1{font-family:"Beon Medium";animation:flickering1 6s infinite;}span.flickering2{font-family:"Beon Medium";animation:flickering2 3s infinite;}span.flickering3{font-family:"Beon Medium";animation:flickering3 5s infinite;}span.flickering4{font-family:"Beon Medium";animation:flickering3 4.5s infinite;}span.flickering5{font-family:"Beon Medium";animation:flickering5 5.5s infinite;}
 @keyframes flickering1{0%{opacity:1;}52%{opacity:1;}55%{opacity:0;}56%{opacity:1;}100%{opacity:1;}}@keyframes flickering2{0%{opacity:1;}62%{opacity:1;}65%{opacity:0;}66%{opacity:1;}69%{opacity:0;}70%{opacity:1;}73%{opacity:0;}74%{opacity:1;}100%{opacity:1;}}@keyframes flickering3{0%{opacity:1;}82%{opacity:1;}84%{opacity:0;}85%{opacity:1;}87%{opacity:0;}88%{opacity:1;}90%{opacity:0;}91%{opacity:1;}100%{opacity:1;}}@keyframes flickering5{0%{opacity:1;}62%{opacity:1;}65%{opacity:0;}67%{opacity:1;}70%{opacity:0;}75%{opacity:1;}100%{opacity:1;}}
-#egg{position:fixed;bottom:18px;right:18px;display:block;width:63px;height:90px;opacity:.15;border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;background:linear-gradient(to bottom right, #fff5c3 30%, #282828 200%);transition:1000ms;box-shadow:4px 4px 8px #000;}
+#egg{position:fixed;bottom:18px;right:18px;display:block;width:63px;height:90px;opacity:.15;border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;background:linear-gradient(#f535aa,#159760);transition:1000ms;box-shadow:4px 4px 8px #000;}
 @media only screen and (max-width:760px){#egg{position:absolute;bottom:9px;right:9px;}}
 #egg:hover{opacity:.75;}
 #chick{position:fixed;bottom:18px;right:18px;width:75px;height:75px;opacity:.15;transition:500ms;background-image:url("../img/chick.png")}
@@ -134,7 +109,7 @@ span.flickering1{font-family:"Beon Medium";animation:flickering1 6s infinite;}sp
 	margin-left: -25px;
 	transform: translate(-50%, -50%);
 	transition: 200ms;
-	text-shadow: -2px 2px 8px #000, 2px 2px 8px #000;
+	text-shadow: 0px 5px 10px #000;
 }
 @media only screen and (max-width:1024px){.fa-angle-down{position:absolute;}}
 @keyframes angle-down{0%,20%,50%,80%,100%{transform:translateY(0);}40%{transform:translateY(-30px);}60%{transform:translateY(-15px);}}
@@ -149,7 +124,7 @@ span.flickering1{font-family:"Beon Medium";animation:flickering1 6s infinite;}sp
 	border-radius: 8px;
 	background-color: #a6b1b7;
 	transform: translate(-50%, -50%);
-	box-shadow: 4px 4px 8px #000;
+	box-shadow: 5px 5px 10px #000;
 }
 @media only screen and (max-width:767px){.video{width:319px;height:186px;}}
 .video>iframe{
@@ -171,6 +146,6 @@ span.flickering1{font-family:"Beon Medium";animation:flickering1 6s infinite;}sp
 	padding: 9px;
 	background-color: #a6b1b7;
 	color: #282828;
-	box-shadow: 4px 4px 8px #000;
+	box-shadow: 5px 5px 10px #000;
 }
 @media only screen and (max-width:767px){.footer{bottom:9px;right:9px;}}
