@@ -1,4 +1,4 @@
-html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}*, *::after,*::before{-webkit-box-sizing:border-box;box-sizing:border-box}body{font-family:Arial,sans-serif}@font-face{font-family:"Beon Medium";src:url('../font/Beon.otf') format('opentype')}.bar{width:100%;height:3px;position:fixed;background-color:#159760;z-index:3}
+*, *::after,*::before{-webkit-box-sizing:border-box;box-sizing:border-box}body{font-family:Arial,sans-serif}@font-face{font-family:"Beon Medium";src:url('../font/Beon.otf') format('opentype')}.bar{width:100%;height:3px;position:fixed;background-color:#159760;z-index:3}
 .cd-fixed-bg{
 	position: relative;
 	min-height: 100vh;
