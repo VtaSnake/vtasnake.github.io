@@ -20,7 +20,7 @@
 	color: #a6b1b7;
 	background-color: #282828;
 	box-shadow: -5px 0 25px #000,5px 0 25px #000;
-	text-shadow: 0 0 2px #000;
+	text-shadow: 0 0 3px #000;
 	z-index: 2}
 @media only screen and (max-width:767px){.cd-scrolling-bg{font-size:16px;line-height:1.5}}
 .cd-scrolling-bg__content{width:90%;max-width:767px;margin:0 auto}
@@ -47,7 +47,7 @@
 	border-radius: 25%;
 	background-color: #fff;
 	transition: 0.2s cubic-bezier(.645,.045,.355,1);
-	text-shadow: 0 0 2px #000;
+	text-shadow: 0 0 3px #000;
 	box-shadow: 0 -5px 10px #000}
 @media only screen and (max-width:767px){.container>a{margin:5px 5px;width:65px;height:65px;line-height:65px}}
 a.fa-youtube{background-color:#ff0000}a.fa-instagram{background-color:#c32aa3}a.fa-twitch{background-color:#6441a4}a.fa-twitter{background-color:#1da1f2}
