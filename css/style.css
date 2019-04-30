@@ -106,10 +106,10 @@ span.flickering1{animation:flickering1 6s infinite}span.flickering2{animation:fl
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	border-radius: 8px;
+	border-radius: 6px;
 	background-color: #a6b1b7;
 	transform: translate(-50%, -50%);
-	box-shadow: 5px 5px 10px #000}
+	box-shadow: 4px 4px 8px #000}
 @media only screen and (max-width:767px){.video{width:319px;height:186px}}
 .video>iframe{
 	width: 640px;
@@ -117,8 +117,7 @@ span.flickering1{animation:flickering1 6s infinite}span.flickering2{animation:fl
 	position: absolute;
 	top: 0; right: 0;
 	bottom: 0; left: 0;
-	margin: auto;
-	border-radius: 5px}
+	margin: auto}
 @media only screen and (max-width:767px){.video>iframe{width:304px;height:171px}}
 .footer{
 	position: absolute;
@@ -129,5 +128,5 @@ span.flickering1{animation:flickering1 6s infinite}span.flickering2{animation:fl
 	letter-spacing: .007em;
 	color: #282828;
 	background-color: #a6b1b7;
-	box-shadow: 5px 5px 10px #000}
+	box-shadow: 4px 4px 8px #000}
 @media only screen and (max-width:767px){.footer{bottom:9px;right:9px}}
