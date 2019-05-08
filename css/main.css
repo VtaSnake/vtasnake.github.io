@@ -73,7 +73,7 @@ span.flickering1{animation:flickering1 6s infinite}span.flickering2{animation:fl
 	animation: angle-down 2s infinite;
 	position: fixed;
 	color: #a6b1b7;
-	bottom: 5%;
+	bottom: 3%;
 	left: 50%;
 	font-size: 80px;
 	margin-left: -25px;
