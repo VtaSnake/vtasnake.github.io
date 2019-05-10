@@ -1,4 +1,4 @@
-body,html{height:100%;font-family:Arial,sans-serif;}@font-face{font-family:"Beon Medium";src:url('../font/Beon.otf') format('opentype')}.bar{width:100%;height:3px;position:fixed;background-color:#159760;z-index:3}
+body,html{height:100%;font-family:"SF Pro Display",Arial,sans-serif;}@font-face{font-family:"SF Pro Display";font-weight:400;src:url('../font/SF-Pro-Display-Regular.otf') format('opentype')}@font-face{font-family:"SF Pro Display";font-weight:600;src:url('../font/SF-Pro-Display-Semibold.otf') format('opentype')}@font-face{font-family:"Beon Medium";src:url('../font/Beon.otf') format('opentype')}.bar{width:100%;height:3px;position:fixed;background-color:#159760;z-index:3}
 .wall,.img{
 	position: relative;
 	background-attachment: fixed;
@@ -6,7 +6,7 @@ body,html{height:100%;font-family:Arial,sans-serif;}@font-face{font-family:"Beon
 	background-repeat: no-repeat;
 	background-size: cover;
 	z-index: 1}
-@media(max-width:1024px){.wall,.img{background-attachment:scroll}}
+@media(max-width:1068px){.wall,.img{background-attachment:scroll}}
 .wall{min-height:100%;background-image:url('../img/wall.jpg')}.img{min-height:100vh;background-image:url('../img/img.jpg')}
 .container{
 	position: fixed;
@@ -14,24 +14,22 @@ body,html{height:100%;font-family:Arial,sans-serif;}@font-face{font-family:"Beon
 	top: 15%;
 	left: 50%;
 	opacity: .75;
-	font-size: 50px;
+	font-size: 40px;
 	transform: translate(-50%, -50%)}
-@media only screen and (max-width:767px){.container{font-size:40px}}
-@media only screen and (max-width:1024px){.container{position:absolute}}
+@media only screen and (min-width:767px) and (min-height:505px){.container{font-size:50px}}
+@media only screen and (max-width:1068px){.container{position:absolute}}
 .container>a{
-	transition: 0.2s cubic-bezier(.645,.045,.355,1);
-	width: 80px;
-	height: 80px;
+	width: 64px;
+	height: 64px;
 	text-align: center;
 	float: left;
-	margin: 10px 10px;
+	margin: 5px 5px;
 	color: #fff;
-	line-height: 80px;
+	line-height: 64px;
 	border-radius: 25%;
 	background-color: #fff;
-	text-shadow: 0 0 3px #000;
 	box-shadow: 0 -5px 10px #000}
-@media only screen and (max-width:767px){.container>a{margin:5px 5px;width:65px;height:65px;line-height:65px}}
+@media only screen and (min-width:767px) and (min-height:505px){.container>a{margin:10px 10px;width:80px;height:80px;line-height:80px}}
 a.fa-youtube{background-color:#ff0000}a.fa-instagram{background-color:#c32aa3}a.fa-twitch{background-color:#6441a4}a.fa-twitter{background-color:#1da1f2}
 a.fa-youtube:hover{color:#ff0000;background-color:#fff}a.fa-instagram:hover{color:#c32aa3;background-color:#fff}a.fa-twitch:hover{color:#6441a4;background-color:#fff}a.fa-twitter:hover{color:#1da1f2;background-color:#fff}
 a.fa-youtube:link{text-decoration:none}a.fa-instagram:link{text-decoration:none}a.fa-twitch:link{text-decoration:none}a.fa-twitter:link{text-decoration:none}
@@ -47,12 +45,12 @@ h1.neon.first{
 	top: 45%;
 	left: 50%;
 	white-space: nowrap;
-	font-size: 100px;
 	font-family: "Beon Medium";
+	font-size: 61px;
 	transform: translate(-50%, -50%);
 	text-shadow: 0 0 10px #159760,0 0 20px #159760,0 0 30px #159760,0 0 40px #159760,0 0 50px #159760,0 0 60px #159760}
-@media only screen and (max-width:767px){h1.neon.first{font-size:61px}}
-@media only screen and (max-width:1024px){h1.neon.first{position:absolute}}
+@media only screen and (min-width:767px) and (min-height:505px){h1.neon.first{font-size:100px}}
+@media only screen and (max-width:1068px){h1.neon.first{position:absolute}}
 h1.neon.second{
 	animation: neon 2s;
 	position: fixed;
@@ -60,15 +58,14 @@ h1.neon.second{
 	top: 55%;
 	left: 50%;
 	white-space: nowrap;
-	font-size: 30px;
 	font-family: "Beon Medium";
+	font-size: 20.3px;
 	transform: translate(-50%, -50%);
 	text-shadow: 0 0 10px #f535aa,0 0 20px #f535aa,0 0 30px #f535aa,0 0 40px #f535aa,0 0 50px #f535aa,0 0 60px #f535aa}
-@media only screen and (max-width:767px){h1.neon.second{font-size:20.3px}}
-@media only screen and (max-width:1024px){h1.neon.second{position:absolute}}
+@media only screen and (min-width:767px) and (min-height:505px){h1.neon.second{font-size:30px}}
+@media only screen and (max-width:1068px){h1.neon.second{position:absolute}}
 @keyframes neon{0%{opacity:0}10%{opacity:0}10.1%{opacity:1}10.2%{opacity:0}20%{opacity:0}20.1%{opacity:1}20.6%{opacity:0}30%{opacity:0}30.1%{opacity:1}30.5%{opacity:1}30.6%{opacity:0}45%{opacity:0}45.1%{opacity:1}50%{opacity:1}55%{opacity:1}55.1%{opacity:0}57%{opacity:0}57.1%{opacity:1}60%{opacity:1}60.1%{opacity:0}65%{opacity:0}65.1%{opacity:1}75%{opacity:1}75.1%{opacity:0}77%{opacity:0}77.1%{opacity:1}85%{opacity:1}85.1%{opacity:0}86%{opacity:0}86.1%{opacity:1}100%{opacity:1}}
-span.flickering1{animation:flickering1 6s infinite}span.flickering2{animation:flickering2 3s infinite}span.flickering3{animation:flickering3 5s infinite}
-@keyframes flickering1{0%{opacity:1}52%{opacity:1}55%{opacity:0}56%{opacity:1}100%{opacity:1}}@keyframes flickering2{0%{opacity:1}62%{opacity:1}65%{opacity:0}66%{opacity:1}69%{opacity:0}70%{opacity:1}73%{opacity:0}74%{opacity:1}100%{opacity:1}}@keyframes flickering3{0%{opacity:1}82%{opacity:1}84%{opacity:0}85%{opacity:1}87%{opacity:0}88%{opacity:1}90%{opacity:0}91%{opacity:1}100%{opacity:1}}
+span.flickering1{animation:flickering1 6s infinite}span.flickering2{animation:flickering2 3s infinite}span.flickering3{animation:flickering3 5s infinite}@keyframes flickering1{0%{opacity:1}52%{opacity:1}55%{opacity:0}56%{opacity:1}100%{opacity:1}}@keyframes flickering2{0%{opacity:1}62%{opacity:1}65%{opacity:0}66%{opacity:1}69%{opacity:0}70%{opacity:1}73%{opacity:0}74%{opacity:1}100%{opacity:1}}@keyframes flickering3{0%{opacity:1}82%{opacity:1}84%{opacity:0}85%{opacity:1}87%{opacity:0}88%{opacity:1}90%{opacity:0}91%{opacity:1}100%{opacity:1}}
 .fa-angle-down{
 	animation: angle-down 2s infinite;
 	position: fixed;
@@ -79,50 +76,49 @@ span.flickering1{animation:flickering1 6s infinite}span.flickering2{animation:fl
 	margin-left: -25px;
 	transform: translate(-50%, -50%);
 	text-shadow: 0 5px 10px #000}
-@media only screen and (max-width:1024px){.fa-angle-down{position:absolute}}
+@media only screen and (max-width:1068px){.fa-angle-down{position:absolute}}
 @keyframes angle-down{0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(-30px)}60%{transform:translateY(-15px)}}
 .fa-angle-down:link{text-decoration:none}
 section{
 	position: relative;
 	text-align: center;
-	padding: 4em 0;
-	font-size: 20px;
-	line-height: 2;
-	letter-spacing: .007em;
+	padding: 3em 0;
 	color: #a6b1b7;
 	background-color: #282828;
 	box-shadow: -5px 0 25px #000,5px 0 25px #000;
-	text-shadow: 0 0 3px #000;
-  z-index: 2}
-@media only screen and (max-width:767px){section{font-size:16px;line-height:1.5}}
+	z-index: 2}
+@media only screen and (min-width:767px) and (min-height:505px){section{padding:6em 0}}
 .content{width:95%;max-width:767px;margin:0 auto}
+.title{font-size:21px;line-height:1.125;font-weight:600;letter-spacing:.004em;color:#fff}@media only screen and (min-width:767px) and (min-height:505px){.title{font-size:31px}}
+.text{display:inline-block;text-align:left;margin-top:12px;font-size:16px;line-height:1.16276;font-weight:400;letter-spacing:.009em}@media only screen and (min-width:767px) and (min-height:505px){.text{margin-top:18px;font-size:24px;line-height:1.33349}}
 .video{
-	width: 660px;
-	height: 380px;
+	width: 330px;
+	height: 190px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	border-radius: 6px;
 	background-color: #a6b1b7;
 	transform: translate(-50%, -50%);
 	box-shadow: 4px 4px 8px #000}
-@media only screen and (max-width:767px){.video{width:319px;height:186px}}
+@media only screen and (min-width:767px) and (min-height:505px){.video{width:660px;height:380px}}
 .video>iframe{
-	width: 640px;
-	height: 360px;
+	width: 320px;
+	height: 180px;
 	position: absolute;
 	top: 0; right: 0;
 	bottom: 0; left: 0;
 	margin: auto}
-@media only screen and (max-width:767px){.video>iframe{width:304px;height:171px}}
+@media only screen and (min-width:767px) and (min-height:505px){.video>iframe{width:640px;height:360px}}
 footer{
 	position: absolute;
-	bottom: 18px;
-	right: 18px;
-	padding: 9px;
+	bottom: 9px;
+	right: 9px;
+	padding: .5em;
 	font-size: 18px;
-	letter-spacing: .007em;
-	color: #282828;
+	line-height: 1.22298;
+	font-weight: 400;
+	letter-spacing: .009em;
+	color: #000;
 	background-color: #a6b1b7;
 	box-shadow: 4px 4px 8px #000}
-@media only screen and (max-width:767px){footer{bottom:9px;right:9px}}
+@media only screen and (min-width:767px) and (min-height:505px){footer{bottom:18px;right:18px}}
