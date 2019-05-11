@@ -15,7 +15,7 @@ body,html{height:100%;font-family:"SF Pro Display",Arial,sans-serif;}@font-face{
 	left: 50%;
 	opacity: .8;
 	font-size: 40px;
-	transform: translate(-50%, -50%)}
+	transform: translate(-50%,-50%)}
 @media only screen and (min-width:767px) and (min-height:505px){.container{font-size:50px}}
 @media only screen and (max-width:1068px){.container{position:absolute}}
 .container>a{
@@ -47,7 +47,7 @@ h1.neon.first{
 	white-space: nowrap;
 	font-family: "Beon Medium";
 	font-size: 61px;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%,-50%);
 	text-shadow: 0 0 10px #159760,0 0 20px #159760,0 0 30px #159760,0 0 40px #159760,0 0 50px #159760,0 0 60px #159760}
 @media only screen and (min-width:767px) and (min-height:505px){h1.neon.first{font-size:100px}}
 @media only screen and (max-width:1068px){h1.neon.first{position:absolute}}
@@ -60,7 +60,7 @@ h1.neon.second{
 	white-space: nowrap;
 	font-family: "Beon Medium";
 	font-size: 20.3px;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%,-50%);
 	text-shadow: 0 0 10px #f535aa,0 0 20px #f535aa,0 0 30px #f535aa,0 0 40px #f535aa,0 0 50px #f535aa,0 0 60px #f535aa}
 @media only screen and (min-width:767px) and (min-height:505px){h1.neon.second{font-size:30px}}
 @media only screen and (max-width:1068px){h1.neon.second{position:absolute}}
@@ -73,11 +73,10 @@ span.flickering1{animation:flickering1 6s infinite}span.flickering2{animation:fl
 	bottom: 3%;
 	left: 50%;
 	font-size: 80px;
-	margin-left: -25px;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%,0);
 	text-shadow: 0 5px 10px #000}
 @media only screen and (max-width:1068px){.fa-angle-down{position:absolute}}
-@keyframes angle-down{0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(-30px)}60%{transform:translateY(-15px)}}
+@keyframes angle-down{0%,20%,50%,80%,100%{transform:translate(-50%,0)}40%{transform:translate(-50%,-30px)}60%{transform:translate(-50%,-15px)}}
 .fa-angle-down:link{text-decoration:none}
 section{
 	position: relative;
@@ -98,7 +97,7 @@ section{
 	top: 50%;
 	left: 50%;
 	background-color: #a6b1b7;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%,-50%);
 	box-shadow: 4px 4px 8px #000}
 @media only screen and (min-width:767px) and (min-height:505px){.video{width:660px;height:380px}}
 .video>iframe{
