@@ -37,7 +37,7 @@ h1.neon.first{
 	left:50%;
 	white-space:nowrap;
 	font-family:"Beon Medium";
-	font-size:61px;
+	font-size:63px;
 	transform:translate(-50%,-50%);
 	text-shadow:0 0 10px #159760,0 0 20px #159760,0 0 30px #159760,0 0 40px #159760,0 0 50px #159760,0 0 60px #159760}
 @media only screen and (min-width:767px) and (min-height:505px){h1.neon.first{font-size:100px}}
@@ -50,7 +50,7 @@ h1.neon.second{
 	left:50%;
 	white-space:nowrap;
 	font-family:"Beon Medium";
-	font-size:20.3px;
+	font-size:19px;
 	transform:translate(-50%,-50%);
 	text-shadow:0 0 10px #f535aa,0 0 20px #f535aa,0 0 30px #f535aa,0 0 40px #f535aa,0 0 50px #f535aa,0 0 60px #f535aa}
 @media only screen and (min-width:767px) and (min-height:505px){h1.neon.second{font-size:30px}}
