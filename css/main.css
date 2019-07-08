@@ -23,7 +23,7 @@ html,body{height:100%;font-family:"SF Pro Display","Helvetica Neue","Helvetica",
 	background-color:#fff;
 	box-shadow:0 -5px 10px #000}
 @media only screen and (min-width:767px) and (min-height:505px){.container>a{margin:10px 10px;width:80px;height:80px;line-height:80px}}
-a.fa-youtube{background-color:#ff0000}a.fa-instagram{background-color:#c32aa3}a.fa-twitch{background-color:#6441a4}a.fa-twitter{background-color:#1da1f2}a.fa-youtube:hover{color:#ff0000;background-color:#fff}a.fa-instagram:hover{color:#c32aa3;background-color:#fff}a.fa-twitch:hover{color:#6441a4;background-color:#fff}a.fa-twitter:hover{color:#1da1f2;background-color:#fff}a.fa-youtube:link{text-decoration:none}a.fa-instagram:link{text-decoration:none}a.fa-twitch:link{text-decoration:none}a.fa-twitter:link{text-decoration:none}
+a.fa-youtube{background-color:#ff0000}a.fa-instagram{background-color:#c32aa3}a.fa-twitch{background-color:#6441a4}a.fa-youtube:hover{color:#ff0000;background-color:#fff}a.fa-instagram:hover{color:#c32aa3;background-color:#fff}a.fa-twitch:hover{color:#6441a4;background-color:#fff}a.fa-youtube:link{text-decoration:none}a.fa-instagram:link{text-decoration:none}a.fa-twitch:link{text-decoration:none}
 h1.neon{
 	color:#fff;
 	font-weight:normal;
