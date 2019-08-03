@@ -69,7 +69,7 @@ span.flickering1{animation:flickering1 6s infinite}span.flickering2{animation:fl
 @media only screen and (max-width:1068px){.fa-angle-down{position:absolute}}
 @keyframes angle-down{0%,20%,50%,80%,100%{transform:translate(-50%,0)}40%{transform:translate(-50%,-30px)}60%{transform:translate(-50%,-15px)}}
 .fa-angle-down:link{text-decoration:none}
-section{
+.main{
 	position:relative;
 	text-align:center;
 	padding:3em 0;
@@ -77,7 +77,7 @@ section{
 	background-color:#282828;
 	box-shadow:-5px 0 25px #000,5px 0 25px #000;
 	z-index:2}
-@media only screen and (min-width:767px) and (min-height:505px){section{padding:6em 0}}
+@media only screen and (min-width:767px) and (min-height:505px){.main{padding:6em 0}}
 .content{width:95%;max-width:767px;margin:0 auto}
 .title{font-size:21px;line-height:1.125;font-weight:600;letter-spacing:.004em;color:#fff}@media only screen and (min-width:767px) and (min-height:505px){.title{font-size:31px}}
 .text{display:inline-block;text-align:left;margin-top:12px;font-size:16px;line-height:1.16276;font-weight:400;letter-spacing:.009em}@media only screen and (min-width:767px) and (min-height:505px){.text{margin-top:18px;font-size:24px;line-height:1.33349}}
