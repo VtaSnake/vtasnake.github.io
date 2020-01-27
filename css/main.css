@@ -98,10 +98,12 @@ a.fa-youtube{background-color:#ff0000}a.fa-instagram{background-color:#c32aa3}a.
 	margin:auto}
 @media only screen and (min-width:767px) and (min-height:505px){.video>iframe{width:640px;height:360px}}
 footer{
+	width: 100%;
 	position:absolute;
-	bottom:9px;
-	right:9px;
-	padding:.5em;
+	bottom:0px;
+	right:0px;
+	text-align: center;
+	padding:.8em 0;
 	font-size:18px;
 	line-height:1.22298;
 	font-weight:400;
@@ -109,4 +111,4 @@ footer{
 	color:#000;
 	background-color:#a6b1b7;
 	box-shadow:3px 3px 6px #000}
-@media only screen and (min-width:767px) and (min-height:505px){footer{bottom:18px;right:18px}}
+@media only screen and (min-width:767px) and (min-height:505px){footer{width:unset;bottom:18px;right:18px;padding:.5em}}
