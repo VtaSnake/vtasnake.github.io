@@ -98,7 +98,7 @@ a.fa-youtube{background-color:#ff0000}a.fa-instagram{background-color:#c32aa3}a.
 	margin:auto}
 @media only screen and (min-width:767px) and (min-height:505px){.video>iframe{width:640px;height:360px}}
 footer{
-	width: 100%;
+	width:100%;
 	position:absolute;
 	bottom:0px;
 	right:0px;
