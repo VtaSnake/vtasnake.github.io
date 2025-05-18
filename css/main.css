@@ -97,7 +97,7 @@ footer{
 	bottom:0;
 	right:0;
 	text-align: center;
-	padding:.8em;
+	padding:.8em 0;
 	font-size:18px;
 	line-height:1.22298;
 	font-weight:400;
@@ -105,4 +105,4 @@ footer{
 	color:#000;
 	background-color:#a6b1b7;
 	box-shadow:0 0 8px #000}
-@media only screen and (min-width:767px) and (min-height:505px){footer{width:unset;bottom:18px;right:18px;border-radius:.8em;}}
+@media only screen and (min-width:767px) and (min-height:505px){footer{width:unset;bottom:18px;right:18px;padding:.8em;border-radius:.8em}}
